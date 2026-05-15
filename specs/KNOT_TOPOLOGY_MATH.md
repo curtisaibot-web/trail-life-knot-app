@@ -82,3 +82,70 @@ For any control point $\mathbf{P}_i = (x, y, z)$, the left-handed equivalent is 
 ## References
 [1] Habrador. "Everything about interpolation in Unity with C# code - Catmull-Rom Splines." https://www.habrador.com/tutorials/interpolation/1-catmull-rom-splines/
 [2] Evasion. "Chapter 8. Curves and Surfaces." http://www-evasion.imag.fr/Membres/Francois.Faure/doc/inventorMentor/sgi_html/ch08.html
+
+
+### 3. The Clove Hitch (Navigator)
+Used to secure a rope to a spar, rail, or post. Modeled around a cylindrical post at $z = 0$.
+
+| Point | $x$ | $y$ | $z$ | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| $\mathbf{P}_0$ | 0.00 | -1.00 | 0.50 | Standing part (anchor) |
+| $\mathbf{P}_1$ | 0.00 | -0.50 | 0.50 | Standing part |
+| $\mathbf{P}_2$ | 0.50 | -0.20 | 0.00 | Wrapping around post (right) |
+| $\mathbf{P}_3$ | 0.00 | 0.00 | -0.50| Behind the post |
+| $\mathbf{P}_4$ | -0.50| 0.20 | 0.00 | Wrapping around post (left) |
+| $\mathbf{P}_5$ | 0.00 | 0.30 | 0.50 | Crossing over the standing part |
+| $\mathbf{P}_6$ | 0.50 | 0.50 | 0.00 | Second wrap (right) |
+| $\mathbf{P}_7$ | 0.00 | 0.60 | -0.50| Behind the post |
+| $\mathbf{P}_8$ | -0.50| 0.50 | 0.00 | Second wrap (left) |
+| $\mathbf{P}_9$ | 0.00 | 0.30 | 0.40 | Tucking under the crossing |
+| $\mathbf{P}_{10}$| 0.00 | 1.00 | 0.40 | Working end |
+
+### 4. The Figure Eight Knot (Navigator)
+A basic stopper knot.
+
+| Point | $x$ | $y$ | $z$ | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| $\mathbf{P}_0$ | 0.00 | -1.00 | 0.00 | Standing part |
+| $\mathbf{P}_1$ | 0.00 | -0.20 | 0.00 | Approaching loop |
+| $\mathbf{P}_2$ | 0.30 | 0.20 | 0.20 | Right side of upper loop |
+| $\mathbf{P}_3$ | 0.00 | 0.50 | 0.00 | Top of loop |
+| $\mathbf{P}_4$ | -0.30| 0.20 | -0.20| Left side of loop |
+| $\mathbf{P}_5$ | 0.00 | -0.10 | -0.30| Crossing under standing part |
+| $\mathbf{P}_6$ | 0.30 | -0.10 | 0.00 | Coming around |
+| $\mathbf{P}_7$ | 0.00 | 0.20 | 0.10 | Tucking through the upper loop |
+| $\mathbf{P}_8$ | -0.20| 0.60 | 0.30 | Working end |
+
+### 5. The Taut-Line Hitch (Navigator)
+An adjustable loop knot for use on lines under tension. Modeled wrapping around its own standing part.
+
+| Point | $x$ | $y$ | $z$ | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| $\mathbf{P}_0$ | 0.00 | -1.00 | 0.00 | Standing part (anchor) |
+| $\mathbf{P}_1$ | 0.00 | 0.80 | 0.00 | Standing part |
+| $\mathbf{P}_2$ | -0.50| 0.80 | 0.00 | Loop going to anchor point |
+| $\mathbf{P}_3$ | -0.50| -0.20| 0.00 | Loop returning |
+| $\mathbf{P}_4$ | 0.00 | -0.20| 0.20 | Crossing over standing part |
+| $\mathbf{P}_5$ | 0.20 | 0.00 | -0.20| First wrap inside loop |
+| $\mathbf{P}_6$ | -0.20| 0.10 | 0.20 | Over standing part again |
+| $\mathbf{P}_7$ | 0.20 | 0.30 | -0.20| Second wrap inside loop |
+| $\mathbf{P}_8$ | -0.20| 0.40 | 0.20 | Over standing part |
+| $\mathbf{P}_9$ | 0.20 | 0.60 | 0.20 | Crossing outside the loop |
+| $\mathbf{P}_{10}$| 0.00 | 0.70 | -0.20| Final wrap outside |
+| $\mathbf{P}_{11}$| -0.20| 0.50 | 0.00 | Tucking through |
+| $\mathbf{P}_{12}$| -0.40| 0.40 | 0.00 | Working end |
+
+### 6. The Daisy Chain (Adventurer Bonus)
+Used to shorten a rope without cutting it, or for storage. This requires a repeating mathematical sequence.
+
+For $n$ chain links, the sequence repeats. Let $y_{offset} = i \times 0.4$ for link $i$.
+For a single link (starts at $y = 0$):
+| Point | $x$ | $y$ | $z$ | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| $\mathbf{P}_{i,0}$| 0.00 | 0.00 | 0.00 | Base of link |
+| $\mathbf{P}_{i,1}$| 0.20 | 0.20 | 0.10 | Right side of loop |
+| $\mathbf{P}_{i,2}$| 0.00 | 0.40 | 0.00 | Top of loop |
+| $\mathbf{P}_{i,3}$| -0.20| 0.20 | -0.10| Left side of loop |
+| $\mathbf{P}_{i,4}$| 0.00 | 0.10 | 0.00 | Crossing through previous link |
+
+*(The working end is pulled through the final loop to lock the chain.)*
