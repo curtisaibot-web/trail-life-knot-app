@@ -1,0 +1,40 @@
+{
+    "name": "Trail Knotz - Knot Mastery",
+    "short_name": "Trail Knotz",
+    "description": "Master every knot for Trail Life Navigators & Adventurers. Learn, practice, verify.",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#F9F7F2",
+    "theme_color": "#2D4A3E",
+    "categories": ["education", "kids", "lifestyle"],
+    "icons": [
+        {
+            "src": "/icons/icon-72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
