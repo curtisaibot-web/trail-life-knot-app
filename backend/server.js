@@ -11,9 +11,12 @@ const { initializeSocket } = require('./socket');
 const authRoutes = require('./routes/auth');
 const leaderboardRoutes = require('./routes/leaderboard');
 const verificationRoutes = require('./routes/verification');
+const buddySystemRoutes = require('./routes/buddySystem');
+const fieldReportRoutes = require('./routes/fieldReport');
 
 // Services
 const { NotificationService } = require('./services/notifications');
+const { sendAllScheduledReports } = require('./services/fieldReport');
 
 // ─────────────────────────────────────────────
 // Database Connection Pool
@@ -47,7 +50,8 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
-// Attach database pool to request object
+// Attach database pool to request object and app-level pool
+app.set('pool', pool);
 app.use((req, res, next) => {
     req.db = pool;
     next();
@@ -83,8 +87,14 @@ app.use('/api/auth', authRoutes);
 // Leaderboard Routes (troop rankings, XP)
 app.use('/api/leaderboard', leaderboardRoutes);
 
-// Verification Routes (submit, review, approve/reject)
+// Verification Routes (submit, review, approve/reject, scouts-honor)
 app.use('/api/verification', verificationRoutes);
+
+// Buddy System Routes (pairing, search, encouragement)
+app.use('/api/buddy-system', buddySystemRoutes);
+
+// Field Report Routes (parent email settings, preview, send)
+app.use('/api/field-report', fieldReportRoutes);
 
 // ─────────────────────────────────────────────
 // Knot Data Routes

@@ -1,101 +1,133 @@
-# Trail Knotz: Comprehensive Research Report
+# Trail Knotz (Knot Mastery) 🪢
 
-This report synthesizes the deep research conducted on the proposed knot-tying educational application for Trail Life USA Navigators and Adventurers. It covers technical feasibility, design inspiration, and engagement mechanics for all core and advanced features.
+A comprehensive knot-tying educational app designed specifically for Trail Life USA Navigators and Adventurers. The app teaches scouts how to tie knots using 3D animations, gamification, AR, multi-language voice narration, and a robust verification system.
 
----
+## Project Overview
 
-## 1. 3D Animation & Visualization Technology
+**Trail Knotz** (also known as Knot Mastery) is built around the "Mastery Loop" educational framework:
+1. **Learn**: 3D visualizer, voice narration, AR placement, Knot of the Week.
+2. **Practice**: Scenario finder, knot chains, weather scenarios, Knot Radio.
+3. **Test**: Knot duels, daily challenges, AI verification, Scout's Honor.
+4. **Master**: Badges, streaks, achievement wall, field reports.
 
-The core value of the app lies in its ability to deconstruct complex knots into understandable visual sequences. Research into 3D animation techniques reveals a clear path forward.
+This repository serves as the comprehensive codebase archive and reference architecture. The project is actively being assembled using Lovable.dev (via the separate `knot-mastery` repository) using the React/Tailwind components and backend structures defined here.
 
-### **Technical Implementation**
-The most effective method for creating these animations is using **Guide Curves** in software like Blender. By animating the control points of a Bézier curve, a 3D rope mesh can be made to follow a precise path, allowing for the "scrubbing" and rotation features we discussed.
+## Tech Stack
 
-| Feature | Technical Approach |
-| :--- | :--- |
-| **Trace Path** | A **Line Renderer** or **Trail Renderer** in Unity can be programmed to follow the rope's "head," leaving a glowing, color-coded trail that highlights the rope's journey through the knot. |
-| **Exploded View** | This is achieved by **procedurally scaling** the distance between the knot's internal loops, allowing users to see the interlocking structure without the rope being tightly jammed. |
-| **Left/Right-Handed** | Animations can be **dynamically mirrored** in the game engine (Unity/Unreal), ensuring that the same 3D asset serves both needs without doubling the storage space. |
-| **Manual Scrubbing** | A **Playthrough Slider** allows users to manually control the animation speed, enabling frame-by-frame study of complex movements. |
+### Frontend
+- **React** (v18+)
+- **Tailwind CSS** (Campy UI Kit: Forest Pine, Parchment, Campfire Orange, Earthy Gold)
+- **React Router DOM**
+- **Vite / Create React App**
 
----
+### Backend
+- **Node.js & Express**
+- **PostgreSQL** (pg pool)
+- **Socket.io** (WebSockets for real-time leaderboards and Knot Duels)
+- **Nodemailer & Node-cron** (for weekly Field Reports)
 
-## 2. Augmented Reality (AR) Integration
+### Integrations & Advanced Features
+- **Unity 3D / AR Foundation**: Catmull-Rom spline engine for rope rendering
+- **ElevenLabs API**: Multi-language voice narration
+- **Web-Push**: Push notifications
 
-AR provides an immersive "hands-on" experience that bridges the gap between the screen and the physical rope.
+## Core Features (40+ Components)
 
-*   **Platform Choice:** **Unity AR Foundation** is the recommended framework, providing cross-platform compatibility for both iOS (ARKit) and Android (ARCore).
-*   **Surface Placement:** Users can "spawn" a life-sized virtual knot onto a picnic table or tree stump, allowing them to walk around it and study it in their own environment.
-*   **Virtual Mentorship:** The AR view can overlay a virtual guide directly onto the user's field of view, matching the outdoor lighting to make the 3D rope appear integrated into the real world.
+### 1. Learning & Practice
+- **Skill Lab (KnotSlider & KnotViewer)**: 3D rotatable knot animations with left-handed mode.
+- **Rope Types Library**: Educational guide on different rope materials and their uses.
+- **Knot Chains**: Learn how knots combine to form complex systems.
+- **Voice Narration**: Step-by-step audio guides in multiple languages/accents.
+- **Knot Radio**: Ambient background audio (campfire, rain, forest) for focused practice.
 
----
+### 2. Gamification & Progression
+- **Progress Tree**: Dynamic SVG tree that grows as the scout earns XP.
+- **Streak Tracker**: Tracks consecutive days of practice with streak freezes.
+- **Trail Tokens**: Virtual currency economy for cosmetic upgrades (no pay-to-win).
+- **Achievement Wall & Badge System**: Visual representation of mastery.
+- **Daily Challenge**: A new knot challenge every day for bonus XP.
 
-## 3. Gamification & Engagement Mechanics
+### 3. Community & Multiplayer
+- **Buddy System**: Paired learning where scouts track progress and earn shared bonuses.
+- **Troop Leaderboard**: Real-time ranking within the scout's troop.
+- **Troop Mission Board**: Collaborative goals set by the Troop Leader.
+- **Knot Duel Arena**: Real-time competitive knot tying via WebSockets.
+- **Knot of the Week**: Community spotlight on exceptional knot tying.
 
-To ensure long-term retention and habit formation, the app will leverage proven mechanics from successful educational platforms like Duolingo.
+### 4. Verification & Reporting
+- **Verification Portal**: Camera-based submission for AI or Leader review.
+- **Scout's Honor**: Self-verification system (awards a Blue Badge instead of Gold).
+- **Knot Fails**: Common mistakes gallery showing anti-patterns to accelerate learning.
+- **Field Report**: Automated weekly email sent to parents summarizing progress.
+- **Admin Dashboard**: Troop Leader portal for reviewing verifications.
+- **Parent Portal**: View-only access for parents to monitor their scout.
 
-### **The Reward System**
-The app will feature a **Token-Based Economy** where users earn digital currency for completing tutorials, passing timed tests, and maintaining streaks.
+## Setup Instructions
 
-| Element | Description |
-| :--- | :--- |
-| **Streaks** | Tracks consecutive days of practice. "Streak Freezes" can be purchased with tokens to protect progress during busy weeks. |
-| **Leaderboards** | Users are grouped into their real-world **Trail Life Troops**, fostering friendly competition and social accountability. |
-| **Medal System** | Users progress through Bronze, Silver, and Gold tiers, aligning with their advancement from Navigator to Adventurer ranks. |
+### Prerequisites
+- Node.js (v18+)
+- PostgreSQL (v14+)
+- npm or yarn
 
----
+### 1. Database Setup
+```bash
+# Create database
+createdb trailknotz
 
-## 4. Multi-Language & Multi-Accent Voice Narration
+# Run schema files
+psql -d trailknotz -f backend/models/database.sql
+psql -d trailknotz -f backend/models/database_updates.sql
+psql -d trailknotz -f backend/models/database_updates_v2.sql
+```
 
-Using **ElevenLabs AI**, the app can provide high-quality, natural-sounding narration in multiple languages and regional accents.
+### 2. Backend Setup
+```bash
+cd backend
+npm install
+# Create a .env file based on environment variables below
+npm run dev
+```
 
-*   **Supported Accents:** American, British, Scottish, and Indian American English profiles are readily available.
-*   **Global Reach:** The app can seamlessly translate instructions into French, Spanish, Chinese, and German.
-*   **Offline Efficiency:** For the MVP, audio files should be **pre-recorded and bundled** with the app to ensure functionality in remote camping locations without internet access.
+**Backend Environment Variables (`backend/.env`):**
+```env
+PORT=5000
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=trailknotz
+DB_USER=your_user
+DB_PASSWORD=your_password
+JWT_SECRET=your_jwt_secret
+FRONTEND_URL=http://localhost:3000
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=reports@knotmastery.app
+SMTP_PASS=your_smtp_password
+```
 
----
+### 3. Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
 
-## 5. UI/UX Design & Branding
+## Documentation & Specs
 
-The app's interface will be a blend of rugged outdoor aesthetics and nostalgic gaming elements.
+- `SCREEN_WALKTHROUGH.md`: Detailed user journey from splash screen to mastery.
+- `LOVABLE_MASTER_REBUILD_PROMPT.md`: Master prompt for Lovable.dev generation.
+- `specs/KNOT_TOPOLOGY_MATH.md`: Mathematical control point matrices for Unity 3D rendering.
+- `specs/3D_ASSET_SPEC.md`: Requirements for 3D modeling the rope and textures.
+- `specs/AI_TRAINING_PLAN.md`: Blueprint for the computer vision knot recognition model.
 
-*   **"Woodsy" Theme:** Backgrounds will feature textures like weathered wood, parchment, and canvas, utilizing the official **Trail Life USA color palette** (Red, Blue, Forest Green, and Earthy Browns).
-*   **Old-School Vibe:** Retro-style typography and pixel-art icons for badges will create a "classic adventure" feel.
-*   **Navigation Board:** A rustic dashboard will serve as the home screen, displaying the user's current rank, XP, and active "missions."
+## Design System (Campy UI Kit)
 
----
+The app uses a custom "Campy" design system to evoke an outdoor, adventurous feel:
+- **Forest Pine** (`#2D4A3E`): Primary brand color, headers, primary buttons.
+- **Parchment** (`#F9F7F2`): Main background color, paper-like texture.
+- **Campfire Orange** (`#E87A5D`): Accents, active states, streaks, warnings.
+- **Earthy Gold** (`#D4AF37`): Leader-verified badges, Trail Tokens, premium elements.
+- **Charcoal** (`#2A2A2A`): Primary text color.
 
-## 6. AI Knot Recognition & Verification
+## License
 
-Research indicates that AI-powered knot verification is technically feasible but requires a hybrid approach for maximum accuracy.
-
-*   **Current Capability:** Modern AI models (like KnotSolver AI) can recognize common knots with **84-90% accuracy** from images and video.
-*   **Error Detection:** Models can be trained to identify specific mistakes, such as a loop being on the wrong side or a crossover being missed.
-*   **The Hybrid Model:** For official badge advancement, the app can use AI for **instant feedback**, but allow users to submit a photo to their **Trail Guide** for final verification within the app's ecosystem.
-
----
-
-## 7. Competitive Analysis & Reverse Engineering
-
-An analysis of the market-leading "Knots 3D" app reveals several industry standards and opportunities for Trail Knotz to excel.
-
-### **Industry Standards to Adopt**
-*   **The Playthrough Slider:** A manual control bar is superior to standard play/pause buttons for learning. It allows the user to move at their own pace, which is critical for complex knots.
-*   **High-Contrast Ropes:** Using two-tone or contrasting colors for the rope significantly reduces the mental load of tracking "over and under" movements.
-*   **Storage Management:** High-quality 3D assets are large. Implementing a "Rank-Based Download Manager" (e.g., download only Navigator knots first) will keep the app accessible on devices with limited storage.
-
-### **The Trail Knotz Advantage**
-While existing apps are excellent utility tools, Trail Knotz will be a superior **educational platform** by adding:
-1.  **The Trace Path Feature:** Leaving a visual "trail" of the rope's journey is a unique instructional tool not found in current apps.
-2.  **Gamification:** Streaks, XP, and Troop Leaderboards turn a utility into a habit-forming game for youth.
-3.  **AR Integration:** Projecting knots into the real world provides a tangible learning experience that screen-only apps cannot match.
-4.  **Voice Narration:** Multi-language and multi-accent support makes the app accessible to a much wider and younger audience.
-
-## 8. Technical Feasibility & Next Steps
-
-Based on the research, all proposed features are achievable using modern development tools.
-
-1.  **MVP Development:** Focus on the 6 core Navigator knots using custom 3D animations and the "Trace Path" feature.
-2.  **Asset Creation:** Commission a 3D artist to create the initial curve-based rope models in Blender.
-3.  **Voice Generation:** Use ElevenLabs to batch-generate the narration files for the core curriculum.
-4.  **Platform Choice:** Develop in **Unity** to leverage its superior AR and 3D capabilities for cross-platform deployment.
+Copyright © 2026 Trail Knotz. All rights reserved.

@@ -123,4 +123,45 @@ router.post('/review', isTroopLeader, async (req, res) => {
     }
 });
 
+// POST: Scout's Honor Self-Verification
+router.post('/scouts-honor', async (req, res) => {
+    try {
+        const { userId, knotSlug, verificationType, checklist, photoIncluded, timestamp } = req.body;
+
+        // In production: insert into scouts_honor_verifications table
+        /*
+        const knotResult = await req.db.query('SELECT id FROM knots WHERE slug = $1', [knotSlug]);
+        const knotId = knotResult.rows[0]?.id;
+
+        await req.db.query(
+            `INSERT INTO scouts_honor_verifications (user_id, knot_id, checklist, photo_included, verified_at)
+             VALUES ($1, $2, $3, $4, $5)`,
+            [userId, knotId, JSON.stringify(checklist), photoIncluded, timestamp]
+        );
+
+        // Update user_knot_progress with 'scouts_honor' verification type
+        await req.db.query(
+            `INSERT INTO user_knot_progress (user_id, knot_id, mastery_level, verification_type, updated_at)
+             VALUES ($1, $2, 'mastered', 'scouts_honor', NOW())
+             ON CONFLICT (user_id, knot_id)
+             DO UPDATE SET mastery_level = 'mastered', verification_type = 'scouts_honor', updated_at = NOW()`,
+            [userId, knotId]
+        );
+
+        // Award 15 XP (less than leader-verified 25 XP)
+        await req.db.query('UPDATE users SET total_xp = total_xp + 15 WHERE id = $1', [userId]);
+        */
+
+        res.status(201).json({
+            message: 'Scout\'s Honor verification recorded.',
+            verificationType: 'scouts_honor',
+            badgeColor: 'blue',
+            xpAwarded: 15,
+        });
+    } catch (error) {
+        console.error('Error processing Scout\'s Honor verification:', error);
+        res.status(500).json({ error: 'Server error during Scout\'s Honor verification' });
+    }
+});
+
 module.exports = router;

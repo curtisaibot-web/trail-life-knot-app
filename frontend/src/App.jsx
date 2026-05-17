@@ -26,6 +26,18 @@ import ProgressTree from './components/ProgressTree';
 import StreakTracker from './components/StreakTracker';
 import VoiceNarration from './components/VoiceNarration';
 
+// New Feature Screens (v2)
+import KnotOfTheWeek from './components/KnotOfTheWeek';
+import RopeTypesLibrary from './components/RopeTypesLibrary';
+import KnotChains from './components/KnotChains';
+import TimeCapsule from './components/TimeCapsule';
+import KnotRadio from './components/KnotRadio';
+import ScoutsHonor from './components/ScoutsHonor';
+import KnotFails from './components/KnotFails';
+import TrailTokens from './components/TrailTokens';
+import BuddySystem from './components/BuddySystem';
+import FieldReport from './components/FieldReport';
+
 // Admin & Parent
 import AdminDashboard from './components/AdminDashboard';
 import ParentPortal from './components/ParentPortal';
@@ -65,6 +77,18 @@ const ROUTES = {
     ropeCalc: { component: 'RopeCalc', title: 'Rope Calculator' },
     progressTree: { component: 'ProgressTree', title: 'Progress Tree' },
     streaks: { component: 'Streaks', title: 'Streak Tracker' },
+
+    // New Feature Screens (v2)
+    knotOfTheWeek: { component: 'KnotOfTheWeek', title: 'Knot of the Week' },
+    ropeTypes: { component: 'RopeTypes', title: 'Rope Types Library' },
+    knotChains: { component: 'KnotChains', title: 'Knot Chains' },
+    timeCapsule: { component: 'TimeCapsule', title: 'Time Capsule' },
+    knotRadio: { component: 'KnotRadio', title: 'Knot Radio' },
+    scoutsHonor: { component: 'ScoutsHonor', title: "Scout's Honor" },
+    knotFails: { component: 'KnotFails', title: 'Knot Fails' },
+    trailTokens: { component: 'TrailTokens', title: 'Trail Tokens' },
+    buddySystem: { component: 'BuddySystem', title: 'Buddy System' },
+    fieldReport: { component: 'FieldReport', title: 'Field Report' },
 
     // Admin & Parent
     admin: { component: 'Admin', title: 'Leader Dashboard' },
@@ -229,7 +253,9 @@ const LoginScreen = ({ onLogin }) => {
                     </form>
                 </div>
 
-                <p className="text-center text-xs font-mono text-bark-gray mt-4">Built with care for Trail Life USA</p>
+                <p className="text-center text-xs text-bark-gray mt-4">
+                    By continuing, you agree to our Terms of Service
+                </p>
             </div>
         </div>
     );
@@ -243,6 +269,7 @@ const App = () => {
     const [currentRoute, setCurrentRoute] = useState('dashboard');
     const [routeParams, setRouteParams] = useState({});
     const [navigationHistory, setNavigationHistory] = useState(['dashboard']);
+    const [knotRadioMinimized, setKnotRadioMinimized] = useState(false);
 
     const navigate = (route, params = {}) => {
         setNavigationHistory(prev => [...prev, route]);
@@ -298,6 +325,33 @@ const App = () => {
                                 <p className="text-xs font-display text-forest-pine mt-1">Rope Calculator</p>
                             </button>
                         </div>
+                        {/* New Features Quick Access */}
+                        <div className="grid grid-cols-3 gap-3">
+                            <button onClick={() => navigate('knotOfTheWeek')} className="bg-cream-white rounded-card shadow-knot-card p-3 text-center">
+                                <span className="text-xl">🌟</span>
+                                <p className="text-[10px] font-display text-forest-pine mt-1">Knot of Week</p>
+                            </button>
+                            <button onClick={() => navigate('trailTokens')} className="bg-cream-white rounded-card shadow-knot-card p-3 text-center">
+                                <span className="text-xl">🪙</span>
+                                <p className="text-[10px] font-display text-forest-pine mt-1">Trail Tokens</p>
+                            </button>
+                            <button onClick={() => navigate('buddySystem')} className="bg-cream-white rounded-card shadow-knot-card p-3 text-center">
+                                <span className="text-xl">🤝</span>
+                                <p className="text-[10px] font-display text-forest-pine mt-1">Buddy System</p>
+                            </button>
+                            <button onClick={() => navigate('knotRadio')} className="bg-cream-white rounded-card shadow-knot-card p-3 text-center">
+                                <span className="text-xl">🎵</span>
+                                <p className="text-[10px] font-display text-forest-pine mt-1">Knot Radio</p>
+                            </button>
+                            <button onClick={() => navigate('knotFails')} className="bg-cream-white rounded-card shadow-knot-card p-3 text-center">
+                                <span className="text-xl">⚠️</span>
+                                <p className="text-[10px] font-display text-forest-pine mt-1">Knot Fails</p>
+                            </button>
+                            <button onClick={() => navigate('timeCapsule')} className="bg-cream-white rounded-card shadow-knot-card p-3 text-center">
+                                <span className="text-xl">🔮</span>
+                                <p className="text-[10px] font-display text-forest-pine mt-1">Time Capsule</p>
+                            </button>
+                        </div>
                     </div>
                 );
 
@@ -314,6 +368,14 @@ const App = () => {
                                 Verify My Knot
                             </button>
                         </div>
+                        <div className="flex gap-2">
+                            <button onClick={() => navigate('scoutsHonor', { knotId: routeParams.knotId, knotName: routeParams.knotName || 'Knot' })} className="flex-1 bg-blue-50 text-blue-700 font-body text-sm py-3 rounded-button">
+                                Scout's Honor
+                            </button>
+                            <button onClick={() => navigate('knotFails', { knotSlug: routeParams.knotSlug })} className="flex-1 bg-campfire-orange/10 text-campfire-orange font-body text-sm py-3 rounded-button">
+                                Common Mistakes
+                            </button>
+                        </div>
                     </div>
                 );
 
@@ -322,6 +384,16 @@ const App = () => {
                     <div className="space-y-5">
                         <ScenarioFinder onSelectKnot={(knotId) => navigate('skillLab', { knotId })} />
                         <WeatherScenarioEngine onSelectKnot={(knotId) => navigate('skillLab', { knotId })} />
+                        <div className="grid grid-cols-2 gap-3">
+                            <button onClick={() => navigate('knotChains')} className="bg-cream-white rounded-card shadow-knot-card p-4 text-center">
+                                <span className="text-2xl">⛓️</span>
+                                <p className="text-xs font-display text-forest-pine mt-1">Knot Chains</p>
+                            </button>
+                            <button onClick={() => navigate('ropeTypes')} className="bg-cream-white rounded-card shadow-knot-card p-4 text-center">
+                                <span className="text-2xl">🧵</span>
+                                <p className="text-xs font-display text-forest-pine mt-1">Rope Types</p>
+                            </button>
+                        </div>
                     </div>
                 );
 
@@ -339,14 +411,36 @@ const App = () => {
                                 <span className="text-2xl">🎯</span>
                                 <p className="text-xs font-display text-forest-pine mt-1">All Missions</p>
                             </button>
+                            <button onClick={() => navigate('knotOfTheWeek')} className="bg-cream-white rounded-card shadow-knot-card p-4 text-center">
+                                <span className="text-2xl">🌟</span>
+                                <p className="text-xs font-display text-forest-pine mt-1">Knot of the Week</p>
+                            </button>
+                            <button onClick={() => navigate('buddySystem')} className="bg-cream-white rounded-card shadow-knot-card p-4 text-center">
+                                <span className="text-2xl">🤝</span>
+                                <p className="text-xs font-display text-forest-pine mt-1">Buddy System</p>
+                            </button>
                         </div>
                     </div>
                 );
 
             case 'settings':
-                return <SettingsPanel userId={user?.id} onLogout={logout} />;
+                return (
+                    <div className="space-y-5">
+                        <SettingsPanel userId={user?.id} onLogout={logout} />
+                        <div className="grid grid-cols-2 gap-3 px-1">
+                            <button onClick={() => navigate('fieldReport')} className="bg-cream-white rounded-card shadow-knot-card p-4 text-center">
+                                <span className="text-2xl">📧</span>
+                                <p className="text-xs font-display text-forest-pine mt-1">Field Report</p>
+                            </button>
+                            <button onClick={() => navigate('parent')} className="bg-cream-white rounded-card shadow-knot-card p-4 text-center">
+                                <span className="text-2xl">👨‍👩‍👦</span>
+                                <p className="text-xs font-display text-forest-pine mt-1">Parent Portal</p>
+                            </button>
+                        </div>
+                    </div>
+                );
 
-            // Secondary Screens
+            // ─── Secondary Screens ───
             case 'knotDetail': return <KnotSlider knotId={routeParams.knotId} handedness={user?.handedness || 'right'} />;
             case 'knotComparison': return <KnotComparisonTool />;
             case 'verification': return <VerificationPortal knotId={routeParams.knotId} userId={user?.id} />;
@@ -361,6 +455,20 @@ const App = () => {
             case 'ropeCalc': return <RopeCalculator />;
             case 'progressTree': return <ProgressTree userId={user?.id} />;
             case 'streaks': return <StreakTracker userId={user?.id} />;
+
+            // ─── New Feature Screens (v2) ───
+            case 'knotOfTheWeek': return <KnotOfTheWeek userId={user?.id} />;
+            case 'ropeTypes': return <RopeTypesLibrary />;
+            case 'knotChains': return <KnotChains userId={user?.id} />;
+            case 'timeCapsule': return <TimeCapsule userId={user?.id} />;
+            case 'knotRadio': return <KnotRadio isMinimized={knotRadioMinimized} onToggleMinimize={() => setKnotRadioMinimized(!knotRadioMinimized)} />;
+            case 'scoutsHonor': return <ScoutsHonor userId={user?.id} knotSlug={routeParams.knotSlug} knotName={routeParams.knotName || 'Knot'} />;
+            case 'knotFails': return <KnotFails knotSlug={routeParams.knotSlug} />;
+            case 'trailTokens': return <TrailTokens userId={user?.id} />;
+            case 'buddySystem': return <BuddySystem userId={user?.id} userName={user?.display_name} />;
+            case 'fieldReport': return <FieldReport userId={user?.id} />;
+
+            // ─── Admin & Parent ───
             case 'admin': return <AdminDashboard troopId={user?.troopId || 1} />;
             case 'parent': return <ParentPortal />;
 
@@ -387,6 +495,9 @@ const App = () => {
                             Leader
                         </button>
                     )}
+                    <button onClick={() => navigate('trailTokens')} className="text-campfire-orange text-sm font-bold">
+                        🪙
+                    </button>
                     <button onClick={() => navigate('settings')} className="text-cream-white text-lg">⚙️</button>
                 </div>
             </header>
@@ -397,6 +508,14 @@ const App = () => {
                     {renderScreen()}
                 </AccessibilityEngine>
             </main>
+
+            {/* Knot Radio Minimized Player (persistent across screens) */}
+            {knotRadioMinimized && currentRoute !== 'knotRadio' && (
+                <KnotRadio isMinimized={true} onToggleMinimize={() => {
+                    setKnotRadioMinimized(false);
+                    navigate('knotRadio');
+                }} />
+            )}
 
             {/* Bottom Navigation */}
             <nav className="fixed bottom-0 left-0 right-0 bg-cream-white border-t border-parchment shadow-card z-40">
