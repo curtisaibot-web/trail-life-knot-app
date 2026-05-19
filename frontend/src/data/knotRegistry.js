@@ -354,16 +354,16 @@ export const KNOT_REGISTRY = {
     },
     "10": {
         "id": 10,
-        "name": "Trucker's Hitch",
-        "program": "Adventurer",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "name": "Overhand Knot",
+        "program": "Navigator",
+        "difficulty": "Easy",
+        "xp_value": 25,
         "tags": [
-            "Hitch",
-            "Tensioning",
-            "Mechanical Advantage"
+            "Stopper",
+            "Basic",
+            "Foundation"
         ],
-        "description": "A compound knot commonly used for securing loads on trucks or trailers.",
+        "description": "The simplest of all knots, often used as a stopper or as the foundation for more complex knots.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Navigator rank",
@@ -372,23 +372,15 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Tie one end of the rope to a fixed anchor point."
+                "instruction": "Form a loop by crossing the working end over the standing part."
             },
             {
                 "step": 2,
-                "instruction": "Form a loop (like a directional figure eight or alpine butterfly) in the middle of the rope."
+                "instruction": "Tuck the working end through the loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end around the second anchor point."
-            },
-            {
-                "step": 4,
-                "instruction": "Pass the working end through the loop created in step 2."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to create tension (3:1 mechanical advantage) and secure with two half hitches."
+                "instruction": "Pull both ends tight to secure the knot."
             }
         ],
         "model_id": "trucker_s_hitch_v1"
@@ -477,16 +469,16 @@ export const KNOT_REGISTRY = {
     },
     "13": {
         "id": 13,
-        "name": "Rolling Hitch",
+        "name": "Girth Hitch",
         "program": "Navigator",
         "difficulty": "Easy",
         "xp_value": 50,
         "tags": [
             "Hitch",
-            "Navigator",
-            "Scouting"
+            "Climbing",
+            "Attaching"
         ],
-        "description": "The Rolling Hitch is an essential knot in the Hitch category, commonly used in Navigator level scouting activities.",
+        "description": "Structurally identical to the Cow Hitch, commonly used in climbing to attach slings to harnesses.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Navigator rank",
@@ -495,39 +487,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Rolling Hitch."
+                "instruction": "Take a sewn sling or a loop of rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Pass one end of the loop through the anchor point or harness tie-in."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Rolling Hitch pattern."
+                "instruction": "Pass the other end of the loop through the first end."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Rolling Hitch."
+                "instruction": "Pull tight to cinch the hitch securely against the anchor."
             }
         ],
         "model_id": "rolling_hitch_v1"
     },
     "14": {
         "id": 14,
-        "name": "Cleat Hitch",
+        "name": "Pile Hitch",
         "program": "Navigator",
         "difficulty": "Easy",
         "xp_value": 50,
         "tags": [
             "Hitch",
-            "Navigator",
-            "Scouting"
+            "Mooring",
+            "Quick"
         ],
-        "description": "The Cleat Hitch is an essential knot in the Hitch category, commonly used in Navigator level scouting activities.",
+        "description": "A quick and easy hitch used for temporarily mooring a boat to a post or pile.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Navigator rank",
@@ -536,39 +524,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Cleat Hitch."
+                "instruction": "Form a bight (a U-shape) in the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Wrap the bight around the post."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Cleat Hitch pattern."
+                "instruction": "Pass the bight over the top of the post and drop it down over the standing parts."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Cleat Hitch."
+                "instruction": "Pull the standing parts to tighten the hitch around the post."
             }
         ],
         "model_id": "cleat_hitch_v1"
     },
     "15": {
         "id": 15,
-        "name": "Marlinspike Hitch",
+        "name": "Half Hitch",
         "program": "Navigator",
         "difficulty": "Easy",
-        "xp_value": 50,
+        "xp_value": 25,
         "tags": [
             "Hitch",
-            "Navigator",
-            "Scouting"
+            "Foundation",
+            "Basic"
         ],
-        "description": "The Marlinspike Hitch is an essential knot in the Hitch category, commonly used in Navigator level scouting activities.",
+        "description": "A simple overhand knot tied around an object. Rarely used alone, but forms the basis of many other hitches.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Navigator rank",
@@ -577,39 +561,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Marlinspike Hitch."
+                "instruction": "Pass the working end around the post or ring."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Bring the working end over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Marlinspike Hitch pattern."
+                "instruction": "Tuck the working end under itself to form a loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Marlinspike Hitch."
+                "instruction": "Pull tight. Note: A single half hitch is not secure under load."
             }
         ],
         "model_id": "marlinspike_hitch_v1"
     },
     "16": {
         "id": 16,
-        "name": "Midshipman's Hitch",
+        "name": "Trucker's Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Tensioning",
+            "Mechanical Advantage"
         ],
-        "description": "The Midshipman's Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A compound knot commonly used for securing loads on trucks or trailers.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -618,39 +598,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Midshipman's Hitch."
+                "instruction": "Tie one end of the rope to a fixed anchor point."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Form a loop (like a directional figure eight or alpine butterfly) in the middle of the rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Midshipman's Hitch pattern."
+                "instruction": "Pass the working end around the second anchor point."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end through the loop created in step 2."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Midshipman's Hitch."
+                "instruction": "Pull tight to create tension (3:1 mechanical advantage) and secure with two half hitches."
             }
         ],
         "model_id": "midshipman_s_hitch_v1"
     },
     "17": {
         "id": 17,
-        "name": "Farrimond Friction Hitch",
+        "name": "Prusik Knot",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
-            "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Climbing",
+            "Rescue"
         ],
-        "description": "The Farrimond Friction Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A friction hitch used to attach a loop of cord around a rope, applied in climbing and mountaineering.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -659,39 +639,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Farrimond Friction Hitch."
+                "instruction": "Take a loop of smaller diameter cord (Prusik loop)."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Pass the knot of the loop behind the main rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Farrimond Friction Hitch pattern."
+                "instruction": "Pass the other end of the loop through the knot end."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Wrap it through the knot end 2 or 3 more times, working inside towards the center."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Farrimond Friction Hitch."
+                "instruction": "Dress the knot neatly and pull tight."
             }
         ],
         "model_id": "farrimond_friction_hitch_v1"
     },
     "18": {
         "id": 18,
-        "name": "Barrel Hitch",
+        "name": "Alpine Butterfly",
         "program": "Adventurer",
         "difficulty": "Medium",
-        "xp_value": 100,
+        "xp_value": 125,
         "tags": [
-            "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Loop",
+            "Midline",
+            "Climbing"
         ],
-        "description": "The Barrel Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A secure loop tied in the bight (middle) of a rope.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -700,39 +680,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Barrel Hitch."
+                "instruction": "Wrap the rope around your hand three times."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Pick up the middle wrap and pull it towards your fingertips."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Barrel Hitch pattern."
+                "instruction": "Pass it over the other two wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck it back under the other two wraps."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Barrel Hitch."
+                "instruction": "Slide it off your hand and pull the loop and both standing ends tight."
             }
         ],
         "model_id": "barrel_hitch_v1"
     },
     "19": {
         "id": 19,
-        "name": "Cow Hitch",
+        "name": "Rolling Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
         "xp_value": 100,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Attaching"
         ],
-        "description": "The Cow Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A knot used to attach a rope to a rod, pole, or another rope. It grips when pulled lengthwise.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -741,39 +721,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Cow Hitch."
+                "instruction": "Take the working end and wrap it around the pole or taut line."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Make a second wrap around the pole, crossing over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Cow Hitch pattern."
+                "instruction": "Make a third wrap around the pole, above the first two wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck the working end under the third wrap to form a half hitch."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Cow Hitch."
+                "instruction": "Pull tight. The hitch will grip when pulled in the direction of the first two wraps."
             }
         ],
         "model_id": "cow_hitch_v1"
     },
     "20": {
         "id": 20,
-        "name": "Girth Hitch",
+        "name": "Cleat Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
-        "xp_value": 100,
+        "xp_value": 75,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Boating",
+            "Securing"
         ],
-        "description": "The Girth Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "The standard knot used to secure a rope to a cleat on a dock or boat.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -782,39 +762,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Girth Hitch."
+                "instruction": "Take a full turn around the base of the cleat, starting from the furthest horn."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Bring the rope over the top of the cleat and under the opposite horn (forming a figure eight)."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Girth Hitch pattern."
+                "instruction": "Cross over the top again."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Form an underhand loop and slip it over the final horn."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Girth Hitch."
+                "instruction": "Pull tight. The free end should be pinned under the final wrap."
             }
         ],
         "model_id": "girth_hitch_v1"
     },
     "21": {
         "id": 21,
-        "name": "Buntline Hitch",
+        "name": "Marlinspike Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
         "xp_value": 100,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Temporary",
+            "Leverage"
         ],
-        "description": "The Buntline Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A temporary knot used to attach a spike or handle to a rope for extra leverage when pulling.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -823,39 +803,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Buntline Hitch."
+                "instruction": "Form a loop in the standing part of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Fold the loop over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Buntline Hitch pattern."
+                "instruction": "Insert the marlinspike (or a sturdy stick) over the edge of the loop, under the standing part, and over the other edge."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Buntline Hitch."
+                "instruction": "Pull the standing part to tighten the hitch around the spike."
             }
         ],
         "model_id": "buntline_hitch_v1"
     },
     "22": {
         "id": 22,
-        "name": "Highwayman's Hitch",
+        "name": "Midshipman's Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 125,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Adjustable",
+            "Tension"
         ],
-        "description": "The Highwayman's Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "An adjustable loop knot, very similar to the Taut-Line Hitch but more secure under load.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -864,39 +840,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Highwayman's Hitch."
+                "instruction": "Pass the working end around the anchor."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Wrap the working end around the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Highwayman's Hitch pattern."
+                "instruction": "Make a second wrap around the standing part, forming an 'awming' (a half hitch that grips the standing part)."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make a final half hitch around the standing part, outside the loop."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Highwayman's Hitch."
+                "instruction": "Pull tight and adjust tension."
             }
         ],
         "model_id": "highwayman_s_hitch_v1"
     },
     "23": {
         "id": 23,
-        "name": "Icicle Hitch",
+        "name": "Farrimond Friction Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Quick Release",
+            "Camping"
         ],
-        "description": "The Icicle Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A quick-release adjustable friction hitch, excellent for tent guy lines.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -905,39 +881,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Icicle Hitch."
+                "instruction": "Pass the working end around the anchor."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Form a bight in the working end and lay it over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Icicle Hitch pattern."
+                "instruction": "Wrap the bight around the standing part 2-3 times, working back towards the anchor."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the bight through the loop formed at the end of the wraps."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Icicle Hitch."
+                "instruction": "Pull the standing part to tighten. Pull the working end to quick-release."
             }
         ],
         "model_id": "icicle_hitch_v1"
     },
     "24": {
         "id": 24,
-        "name": "Killick Hitch",
+        "name": "Barrel Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
         "xp_value": 100,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Lifting",
+            "Utility"
         ],
-        "description": "The Killick Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A knot used to sling a barrel, bucket, or cylindrical object for lifting.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -946,39 +922,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Killick Hitch."
+                "instruction": "Place the barrel on top of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Bring the two ends up and tie an overhand knot over the top of the barrel."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Killick Hitch pattern."
+                "instruction": "Open the overhand knot and pull the two sides down over the rim of the barrel."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Killick Hitch."
+                "instruction": "Join the two ends above the barrel with a Bowline."
             }
         ],
         "model_id": "killick_hitch_v1"
     },
     "25": {
         "id": 25,
-        "name": "Knute Hitch",
+        "name": "Buntline Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
         "xp_value": 100,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Secure",
+            "Sailing"
         ],
-        "description": "The Knute Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A simple and highly secure hitch used to attach a rope to a ring or bar. It tends to jam under heavy load.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -987,39 +959,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Knute Hitch."
+                "instruction": "Pass the working end through the ring."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Bring the working end across the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Knute Hitch pattern."
+                "instruction": "Tie a clove hitch around the standing part, working towards the ring."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Knute Hitch."
+                "instruction": "Pull tight to secure."
             }
         ],
         "model_id": "knute_hitch_v1"
     },
     "26": {
         "id": 26,
-        "name": "Magnus Hitch",
+        "name": "Highwayman's Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
         "xp_value": 100,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Quick Release",
+            "Temporary"
         ],
-        "description": "The Magnus Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A quick-release draw hitch used for temporary mooring, easily untied with a single tug.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -1028,39 +996,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Magnus Hitch."
+                "instruction": "Form a bight in the standing part and hold it behind the pole."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Form a bight in the working end and pass it around the front of the pole and through the first bight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Magnus Hitch pattern."
+                "instruction": "Pull the standing part down to tighten the first bight over the second."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Form a new bight in the working end and pass it through the second bight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Magnus Hitch."
+                "instruction": "Pull the standing part to tighten. Tug the working end to release."
             }
         ],
         "model_id": "magnus_hitch_v1"
     },
     "27": {
         "id": 27,
-        "name": "Ossel Hitch",
+        "name": "Icicle Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Gripping"
         ],
-        "description": "The Ossel Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "An excellent friction hitch for gripping smooth or tapered poles, even when pulled parallel to the pole.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -1069,39 +1037,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Ossel Hitch."
+                "instruction": "Drop a bight of rope behind the pole."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Take the working end and wrap it 4 or 5 times around the pole and the standing part, working upwards."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Ossel Hitch pattern."
+                "instruction": "Bring the working end down across the front of the wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end through the original bight at the bottom."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Ossel Hitch."
+                "instruction": "Pull tight and dress the knot carefully."
             }
         ],
         "model_id": "ossel_hitch_v1"
     },
     "28": {
         "id": 28,
-        "name": "Pile Hitch",
+        "name": "Killick Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
-        "xp_value": 100,
+        "xp_value": 75,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Dragging",
+            "Utility"
         ],
-        "description": "The Pile Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "Used to drag logs or stones; it is essentially a Timber Hitch combined with a Half Hitch.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -1110,39 +1078,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Pile Hitch."
+                "instruction": "Tie a Timber Hitch near one end of the log or stone."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Run the standing part along the length of the object."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Pile Hitch pattern."
+                "instruction": "Near the other end of the object, tie a Half Hitch."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Pile Hitch."
+                "instruction": "Pull the standing part tight. The Timber Hitch grips, while the Half Hitch guides."
             }
         ],
         "model_id": "pile_hitch_v1"
     },
     "29": {
         "id": 29,
-        "name": "Snell Knot",
+        "name": "Knute Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Easy",
+        "xp_value": 50,
         "tags": [
-            "Utility",
-            "Adventurer",
-            "Scouting"
+            "Hitch",
+            "Lanyard",
+            "Tools"
         ],
-        "description": "The Snell Knot is an essential knot in the Utility category, commonly used in Adventurer level scouting activities.",
+        "description": "A quick, clever hitch for attaching a lanyard to a tool with a hole in the handle.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Adventurer rank",
@@ -1151,39 +1115,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Snell Knot."
+                "instruction": "Tie a figure eight knot or overhand knot in the very end of the lanyard."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Form a bight just below the stopper knot."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Snell Knot pattern."
+                "instruction": "Push the bight through the hole in the tool handle."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the stopper knot through the bight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Snell Knot."
+                "instruction": "Pull the standing part to lock the stopper knot against the hole."
             }
         ],
         "model_id": "snell_knot_v1"
     },
     "30": {
         "id": 30,
-        "name": "Tensionless Hitch",
+        "name": "Magnus Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 125,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Sailing"
         ],
-        "description": "The Tensionless Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A variation of the Rolling Hitch, tied with the final hitch in the opposite direction. Grips well on smooth spars.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -1192,39 +1156,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Tensionless Hitch."
+                "instruction": "Make a turn around the spar."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Make a second turn, crossing over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Tensionless Hitch pattern."
+                "instruction": "Make a third turn above the first two."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Bring the working end down and tuck it under the third turn, going in the opposite direction of a Rolling Hitch."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Tensionless Hitch."
+                "instruction": "Pull tight to secure."
             }
         ],
         "model_id": "tensionless_hitch_v1"
     },
     "31": {
         "id": 31,
-        "name": "Blake's Hitch",
+        "name": "Ossel Hitch",
         "program": "Adventurer",
         "difficulty": "Medium",
         "xp_value": 100,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Fishing",
+            "Netting"
         ],
-        "description": "The Blake's Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "Used historically to attach netting to a rope. Similar to a clove hitch but more secure against sliding.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -1233,39 +1197,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Blake's Hitch."
+                "instruction": "Pass the working end around the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Cross over the standing part and make a second turn around the rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Blake's Hitch pattern."
+                "instruction": "Bring the working end around the standing part itself."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck the working end under the second turn."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Blake's Hitch."
+                "instruction": "Pull tight."
             }
         ],
         "model_id": "blake_s_hitch_v1"
     },
     "32": {
         "id": 32,
-        "name": "Distel Hitch",
+        "name": "Tensionless Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Easy",
+        "xp_value": 75,
         "tags": [
             "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Anchoring",
+            "Rescue"
         ],
-        "description": "The Distel Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "The strongest possible anchor knot, retaining 100% of rope strength by using friction around a large object like a tree.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -1274,39 +1238,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Distel Hitch."
+                "instruction": "Wrap the rope around a large, smooth anchor (like a tree trunk) at least 4 times."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Ensure the wraps are neat and do not cross each other."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Distel Hitch pattern."
+                "instruction": "Take the working end and tie a figure eight loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Distel Hitch."
+                "instruction": "Clip the loop back to the standing part with a carabiner."
             }
         ],
         "model_id": "distel_hitch_v1"
     },
     "33": {
         "id": 33,
-        "name": "Klemheist Knot",
+        "name": "Blake's Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Arborist",
+            "Climbing"
         ],
-        "description": "The Klemheist Knot is an essential knot in the Utility category, commonly used in Adventurer level scouting activities.",
+        "description": "A friction hitch commonly used by arborists for ascending and descending trees.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Adventurer rank",
@@ -1315,39 +1275,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Klemheist Knot."
+                "instruction": "Take the tail of the climbing rope and wrap it 4 times around the standing part, working upwards."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Bring the tail down across the front of all 4 wraps."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Klemheist Knot pattern."
+                "instruction": "Pass the tail behind the standing part and tuck it up through the bottom two wraps only."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tie a figure eight stopper knot in the very end of the tail for safety."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Klemheist Knot."
+                "instruction": "Dress the knot carefully. It should grip when loaded and slide when pushed."
             }
         ],
         "model_id": "klemheist_knot_v1"
     },
     "34": {
         "id": 34,
-        "name": "Valdotain Tresse",
+        "name": "Distel Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Arborist",
+            "Climbing"
         ],
-        "description": "The Valdotain Tresse is an essential knot in the Utility category, commonly used in Adventurer level scouting activities.",
+        "description": "A responsive friction hitch used with an eye-to-eye friction cord for tree climbing.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Adventurer rank",
@@ -1356,39 +1316,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Valdotain Tresse."
+                "instruction": "Place the friction cord behind the main rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Make 4 wraps downwards around the main rope with the top leg of the cord."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Valdotain Tresse pattern."
+                "instruction": "Bring the bottom leg up and over the wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tie a half hitch around the main rope above the wraps."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Valdotain Tresse."
+                "instruction": "Connect both eyes of the cord to a carabiner."
             }
         ],
         "model_id": "valdotain_tresse_v1"
     },
     "35": {
         "id": 35,
-        "name": "Schwabisch Hitch",
+        "name": "Klemheist Knot",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
-            "Hitch",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Rescue",
+            "Webbing"
         ],
-        "description": "The Schwabisch Hitch is an essential knot in the Hitch category, commonly used in Adventurer level scouting activities.",
+        "description": "A friction hitch similar to the Prusik, but it can be tied with webbing and only grips in one direction.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Adventurer rank",
@@ -1397,39 +1357,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Schwabisch Hitch."
+                "instruction": "Take a loop of cord or webbing and wrap it around the main rope 3 or 4 times."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Work downwards with the wraps."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Schwabisch Hitch pattern."
+                "instruction": "Pass the bottom end of the loop through the top end of the loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pull the bottom end tight to dress the knot."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Schwabisch Hitch."
+                "instruction": "Load the knot downwards to grip."
             }
         ],
         "model_id": "schwabisch_hitch_v1"
     },
     "36": {
         "id": 36,
-        "name": "Bowline on a Bight",
+        "name": "Valdotain Tresse",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Expert",
+        "xp_value": 250,
         "tags": [
-            "Loop",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Advanced",
+            "Arborist"
         ],
-        "description": "The Bowline on a Bight is an essential knot in the Loop category, commonly used in Adventurer level scouting activities.",
+        "description": "An advanced friction hitch (often called a VT) that offers incredibly smooth descent control.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Adventurer rank",
@@ -1438,39 +1398,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Bowline on a Bight."
+                "instruction": "Using an eye-to-eye cord, make 4 wraps around the main rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Cross the two legs over each other in front of the rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Bowline on a Bight pattern."
+                "instruction": "Cross them behind the rope."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Cross them in front one more time (forming a braid or 'tresse')."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Bowline on a Bight."
+                "instruction": "Bring both eyes down and clip them to a carabiner."
             }
         ],
         "model_id": "bowline_on_a_bight_v1"
     },
     "37": {
         "id": 37,
-        "name": "French Bowline",
+        "name": "Schwabisch Hitch",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Loop",
-            "Adventurer",
-            "Scouting"
+            "Friction",
+            "Arborist",
+            "Climbing"
         ],
-        "description": "The French Bowline is an essential knot in the Loop category, commonly used in Adventurer level scouting activities.",
+        "description": "A compact friction hitch that grips reliably and releases easily.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Adventurer rank",
@@ -1479,39 +1439,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the French Bowline."
+                "instruction": "Using an eye-to-eye cord, place it behind the main rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Make 4 wraps downwards with the top leg."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the French Bowline pattern."
+                "instruction": "Bring the bottom leg up and tie a half hitch above the wraps, but in the opposite direction of a Distel hitch."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Dress the knot so it is compact."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the French Bowline."
+                "instruction": "Clip both eyes to a carabiner."
             }
         ],
         "model_id": "french_bowline_v1"
     },
     "38": {
         "id": 38,
-        "name": "Water Bowline",
+        "name": "Bowline on a Bight",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Loop",
-            "Adventurer",
-            "Scouting"
+            "Rescue",
+            "Midline"
         ],
-        "description": "The Water Bowline is an essential knot in the Loop category, commonly used in Adventurer level scouting activities.",
+        "description": "A variation of the Bowline that creates two fixed loops in the middle of a rope, useful for a makeshift rescue harness.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Adventurer rank",
@@ -1520,39 +1480,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Water Bowline."
+                "instruction": "Form a long bight in the middle of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Tie an overhand loop using the doubled rope, but do not pull it tight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Water Bowline pattern."
+                "instruction": "Take the end of the bight and open it up."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the entire overhand knot through the open bight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Water Bowline."
+                "instruction": "Pull the two loops and the standing parts tight."
             }
         ],
         "model_id": "water_bowline_v1"
     },
     "39": {
         "id": 39,
-        "name": "Spanish Bowline",
+        "name": "French Bowline",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Loop",
-            "Adventurer",
-            "Scouting"
+            "Rescue",
+            "Adjustable"
         ],
-        "description": "The Spanish Bowline is an essential knot in the Loop category, commonly used in Adventurer level scouting activities.",
+        "description": "A rescue knot that creates two loops which tighten against each other when loaded, acting as a sling.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Adventurer rank",
@@ -1561,39 +1521,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Spanish Bowline."
+                "instruction": "Form a small loop (rabbit hole) in the standing part."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Pass the working end through the loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Spanish Bowline pattern."
+                "instruction": "Make a large loop (for a person to sit in) and pass the working end through the small loop again."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make a second large loop (for the chest) and bring the working end behind the standing part."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Spanish Bowline."
+                "instruction": "Pass the working end back down through the small loop and tighten."
             }
         ],
         "model_id": "spanish_bowline_v1"
     },
     "40": {
         "id": 40,
-        "name": "Portuguese Bowline",
+        "name": "Water Bowline",
         "program": "Adventurer",
-        "difficulty": "Medium",
-        "xp_value": 100,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Loop",
-            "Adventurer",
-            "Scouting"
+            "Wet Conditions",
+            "Secure"
         ],
-        "description": "The Portuguese Bowline is an essential knot in the Loop category, commonly used in Adventurer level scouting activities.",
+        "description": "A Bowline tied with a clove hitch as the base instead of a simple loop, preventing it from jamming when wet.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Adventurer rank",
@@ -1602,39 +1562,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Portuguese Bowline."
+                "instruction": "Form a clove hitch in the standing part of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Pass the working end up through both loops of the clove hitch."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Portuguese Bowline pattern."
+                "instruction": "Bring the working end around behind the standing part."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end back down through the two loops."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Portuguese Bowline."
+                "instruction": "Pull tight. The clove hitch base provides extra security."
             }
         ],
         "model_id": "portuguese_bowline_v1"
     },
     "41": {
         "id": 41,
-        "name": "Yosemite Bowline",
+        "name": "Spanish Bowline",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
             "Loop",
-            "Ranger",
-            "Scouting"
+            "Rescue",
+            "Double"
         ],
-        "description": "The Yosemite Bowline is an essential knot in the Loop category, commonly used in Ranger level scouting activities.",
+        "description": "A complex knot that creates two independent, fixed loops. Used in rescue to lift a person (one loop for each leg).",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Ranger rank",
@@ -1643,39 +1603,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Yosemite Bowline."
+                "instruction": "Form three loops in the rope side by side."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Fold the two outer loops over the center loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Yosemite Bowline pattern."
+                "instruction": "Pull the bottom of the center loop up through the two outer loops."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pull the bottoms of the two outer loops through the center loop."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Yosemite Bowline."
+                "instruction": "Pull all parts tight to form the two large rescue loops."
             }
         ],
         "model_id": "yosemite_bowline_v1"
     },
     "42": {
         "id": 42,
-        "name": "Directional Figure Eight",
+        "name": "Portuguese Bowline",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Rescue",
+            "Adjustable"
         ],
-        "description": "The Directional Figure Eight is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "Creates two loops that can be adjusted in size before loading, making it ideal as a makeshift bosun's chair.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -1684,39 +1644,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Directional Figure Eight."
+                "instruction": "Form a small loop (rabbit hole) in the standing part."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Make two large loops (for the legs) and pass the working end through the small loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Directional Figure Eight pattern."
+                "instruction": "Bring the working end behind the standing part."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end back down through the small loop."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Directional Figure Eight."
+                "instruction": "Adjust the size of the two large loops, then pull tight to lock."
             }
         ],
         "model_id": "directional_figure_eight_v1"
     },
     "43": {
         "id": 43,
-        "name": "Figure Eight on a Bight",
+        "name": "Yosemite Bowline",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Climbing",
+            "Secure"
         ],
-        "description": "The Figure Eight on a Bight is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A standard Bowline with an extra wrap that prevents the knot from capsizing under heavy ring-loading.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -1725,39 +1685,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Figure Eight on a Bight."
+                "instruction": "Tie a standard Bowline."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Take the tail (which is inside the main loop) and wrap it around the outside of the main loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Figure Eight on a Bight pattern."
+                "instruction": "Follow the standing part back up through the knot."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "The tail should exit parallel to the standing part."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Figure Eight on a Bight."
+                "instruction": "Dress and pull very tight."
             }
         ],
         "model_id": "figure_eight_on_a_bight_v1"
     },
     "44": {
         "id": 44,
-        "name": "Figure Eight Follow-Through",
+        "name": "Directional Figure Eight",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Midline",
+            "Tensioning"
         ],
-        "description": "The Figure Eight Follow-Through is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A midline loop tied to point in a specific direction along the rope, perfect for the upper loop in a Trucker's Hitch.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -1766,39 +1726,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Figure Eight Follow-Through."
+                "instruction": "Form a long bight in the standing part of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Lay the bight over the standing part to form a figure eight shape."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Figure Eight Follow-Through pattern."
+                "instruction": "Pass the end of the bight under the standing part."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck the bight up through the top loop of the figure eight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Figure Eight Follow-Through."
+                "instruction": "Pull tight. The loop will naturally point in one direction."
             }
         ],
         "model_id": "figure_eight_follow_through_v1"
     },
     "45": {
         "id": 45,
-        "name": "Artillery Loop",
+        "name": "Figure Eight on a Bight",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
             "Loop",
-            "Ranger",
-            "Scouting"
+            "Climbing",
+            "Secure"
         ],
-        "description": "The Artillery Loop is an essential knot in the Loop category, commonly used in Ranger level scouting activities.",
+        "description": "A very secure, bulky loop knot tied in the middle of a rope, heavily used in climbing and rescue.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Ranger rank",
@@ -1807,39 +1767,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Artillery Loop."
+                "instruction": "Form a bight (a U-shape) in the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Treat the bight as a single strand and wrap it over the standing parts."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Artillery Loop pattern."
+                "instruction": "Wrap it under the standing parts."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the end of the bight down through the loop you just created."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Artillery Loop."
+                "instruction": "Pull tight and dress the knot so the strands lie flat."
             }
         ],
         "model_id": "artillery_loop_v1"
     },
     "46": {
         "id": 46,
-        "name": "Farmer's Loop",
+        "name": "Figure Eight Follow-Through",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
             "Loop",
-            "Ranger",
-            "Scouting"
+            "Climbing",
+            "Tie-in"
         ],
-        "description": "The Farmer's Loop is an essential knot in the Loop category, commonly used in Ranger level scouting activities.",
+        "description": "The standard knot for tying a climbing rope into a harness. It is a Figure Eight loop tied by retracing a single strand.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Ranger rank",
@@ -1848,39 +1808,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Farmer's Loop."
+                "instruction": "Tie a loose Figure Eight knot in the rope, leaving a long tail."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Pass the tail through your harness tie-in points."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Farmer's Loop pattern."
+                "instruction": "Follow the path of the original Figure Eight knot exactly in reverse."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Ensure the strands run parallel and do not cross."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Farmer's Loop."
+                "instruction": "Pull all four strands individually to tighten."
             }
         ],
         "model_id": "farmer_s_loop_v1"
     },
     "47": {
         "id": 47,
-        "name": "Honda Knot",
+        "name": "Artillery Loop",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Midline",
+            "Multi-directional"
         ],
-        "description": "The Honda Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "Also known as the Manharness Knot. A midline loop that can take a load from any direction without distorting.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -1889,39 +1849,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Honda Knot."
+                "instruction": "Form an underhand loop in the middle of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the standing part over the loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Honda Knot pattern."
+                "instruction": "Reach through the loop and pull the standing part through."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "This forms a new loop. Pull it out to the desired size."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Honda Knot."
+                "instruction": "Pull both standing ends to lock the knot."
             }
         ],
         "model_id": "honda_knot_v1"
     },
     "48": {
         "id": 48,
-        "name": "Manharness Knot",
+        "name": "Farmer's Loop",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Midline",
+            "Quick"
         ],
-        "description": "The Manharness Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A midline loop tied by wrapping the rope around your hand. It is fast to tie and very secure.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -1930,39 +1890,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Manharness Knot."
+                "instruction": "Wrap the rope around your hand three times."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pull the middle wrap over the right wrap."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Manharness Knot pattern."
+                "instruction": "Pull the new middle wrap over the left wrap."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pull the new middle wrap over the right wrap again."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Manharness Knot."
+                "instruction": "The middle wrap is now the loop. Pull it out and slide the knot off your hand."
             }
         ],
         "model_id": "manharness_knot_v1"
     },
     "49": {
         "id": 49,
-        "name": "Perfection Loop",
+        "name": "Honda Knot",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
             "Loop",
-            "Ranger",
-            "Scouting"
+            "Lasso",
+            "Sliding"
         ],
-        "description": "The Perfection Loop is an essential knot in the Loop category, commonly used in Ranger level scouting activities.",
+        "description": "The knot used to form the small, perfectly round loop at the end of a lariat or lasso.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Ranger rank",
@@ -1971,39 +1931,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Perfection Loop."
+                "instruction": "Tie a loose overhand knot near the end of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Take the working end and pass it back through the overhand knot."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Perfection Loop pattern."
+                "instruction": "Tie a stopper knot (like an overhand) in the very tip of the working end."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pull the knot tight. The stopper knot prevents it from pulling through."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Perfection Loop."
+                "instruction": "Pass the long standing part through the loop to form the lasso."
             }
         ],
         "model_id": "perfection_loop_v1"
     },
     "50": {
         "id": 50,
-        "name": "Surgeon's Loop",
+        "name": "Manharness Knot",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
             "Loop",
-            "Ranger",
-            "Scouting"
+            "Midline",
+            "Hauling"
         ],
-        "description": "The Surgeon's Loop is an essential knot in the Loop category, commonly used in Ranger level scouting activities.",
+        "description": "A midline loop used historically to harness men or animals to a rope for hauling heavy loads.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Ranger rank",
@@ -2012,39 +1972,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Surgeon's Loop."
+                "instruction": "Form a loop in the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Lay the loop over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Surgeon's Loop pattern."
+                "instruction": "Reach under the standing part and pull a bight of the loop through."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the bight over the top of the entire knot."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Surgeon's Loop."
+                "instruction": "Pull tight. The loop should stick out perpendicular to the rope."
             }
         ],
         "model_id": "surgeon_s_loop_v1"
     },
     "51": {
         "id": 51,
-        "name": "Angler's Loop",
+        "name": "Perfection Loop",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
             "Loop",
-            "Ranger",
-            "Scouting"
+            "Fishing",
+            "Inline"
         ],
-        "description": "The Angler's Loop is an essential knot in the Loop category, commonly used in Ranger level scouting activities.",
+        "description": "A strong, compact loop knot used by anglers to attach flies or lures. The loop sits perfectly in line with the standing part.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Ranger rank",
@@ -2053,39 +2013,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Angler's Loop."
+                "instruction": "Form a loop near the end of the line, pinching it between your thumb and forefinger."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Wrap the working end around the loop to form a second loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Angler's Loop pattern."
+                "instruction": "Pass the working end between the two loops."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pull the second loop through the first loop."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Angler's Loop."
+                "instruction": "Pull tight, ensuring the loop stays in line with the main line."
             }
         ],
         "model_id": "angler_s_loop_v1"
     },
     "52": {
         "id": 52,
-        "name": "Bimini Twist",
+        "name": "Surgeon's Loop",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Fishing",
+            "Quick"
         ],
-        "description": "The Bimini Twist is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A double overhand knot tied in a bight. It is bulky but very fast and secure for fishing lines.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2094,39 +2054,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Bimini Twist."
+                "instruction": "Form a bight (a U-shape) at the end of the line."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Tie an overhand knot using the doubled line, but do not pull it tight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Bimini Twist pattern."
+                "instruction": "Pass the loop through the overhand knot a second time."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Lubricate the knot with water or saliva."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Bimini Twist."
+                "instruction": "Pull all four strands tight simultaneously."
             }
         ],
         "model_id": "bimini_twist_v1"
     },
     "53": {
         "id": 53,
-        "name": "Dropper Loop",
+        "name": "Angler's Loop",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
             "Loop",
-            "Ranger",
-            "Scouting"
+            "Bungee",
+            "Jamming"
         ],
-        "description": "The Dropper Loop is an essential knot in the Loop category, commonly used in Ranger level scouting activities.",
+        "description": "A loop knot that holds well in bungee cord or elastic, but tends to jam tightly under load in regular rope.",
         "scenarios": [
             "Used in camping scenarios requiring a Loop",
             "Standard requirement for the Ranger rank",
@@ -2135,39 +2095,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Dropper Loop."
+                "instruction": "Form a loop in the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Loop."
+                "instruction": "Wrap the working end around the loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Dropper Loop pattern."
+                "instruction": "Wrap it around the loop a second time."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end between the two wraps."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Dropper Loop."
+                "instruction": "Pull tight. The knot is bulky but very secure."
             }
         ],
         "model_id": "dropper_loop_v1"
     },
     "54": {
         "id": 54,
-        "name": "Non-Slip Mono",
+        "name": "Bimini Twist",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 250,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Fishing",
+            "100% Strength"
         ],
-        "description": "The Non-Slip Mono is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A complex fishing knot that retains 100% of the line's breaking strength. Used in big game fishing.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2176,39 +2136,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Non-Slip Mono."
+                "instruction": "Form a large loop in the line and twist it 20-30 times."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Place the loop over a fixed object (or your knee) and apply tension."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Non-Slip Mono pattern."
+                "instruction": "Allow the tag end to wrap backwards over the twists."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Secure the wraps with a half hitch around one leg of the loop."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Non-Slip Mono."
+                "instruction": "Finish with a 3-turn half hitch around both legs of the loop and pull tight."
             }
         ],
         "model_id": "non_slip_mono_v1"
     },
     "55": {
         "id": 55,
-        "name": "Carrick Bend",
+        "name": "Dropper Loop",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Bend",
-            "Ranger",
-            "Scouting"
+            "Loop",
+            "Fishing",
+            "Midline"
         ],
-        "description": "The Carrick Bend is an essential knot in the Bend category, commonly used in Ranger level scouting activities.",
+        "description": "A loop tied in the middle of a fishing line, standing out at right angles, used for attaching extra hooks.",
         "scenarios": [
             "Used in camping scenarios requiring a Bend",
             "Standard requirement for the Ranger rank",
@@ -2217,39 +2177,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Carrick Bend."
+                "instruction": "Form a loop in the middle of the line."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Bend."
+                "instruction": "Twist the two sides of the loop together 5 or 6 times."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Carrick Bend pattern."
+                "instruction": "Open the center twist."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Push the top of the loop through the center twist."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Carrick Bend."
+                "instruction": "Lubricate and pull both standing ends to tighten the twists around the loop."
             }
         ],
         "model_id": "carrick_bend_v1"
     },
     "56": {
         "id": 56,
-        "name": "Double Sheet Bend",
+        "name": "Carrick Bend",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
             "Bend",
-            "Ranger",
-            "Scouting"
+            "Heavy Load",
+            "Symmetrical"
         ],
-        "description": "The Double Sheet Bend is an essential knot in the Bend category, commonly used in Ranger level scouting activities.",
+        "description": "A beautiful, symmetrical bend used for joining two heavy ropes. It does not jam even under extreme load.",
         "scenarios": [
             "Used in camping scenarios requiring a Bend",
             "Standard requirement for the Ranger rank",
@@ -2258,39 +2218,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Double Sheet Bend."
+                "instruction": "Form a loop in the first rope, with the working end passing under the standing part."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Bend."
+                "instruction": "Lay the working end of the second rope across the loop of the first."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Double Sheet Bend pattern."
+                "instruction": "Pass the second working end under the first rope's standing part."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Weave it over, under, and over through the loop, following an alternating pattern."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Double Sheet Bend."
+                "instruction": "Pull all four ends to tighten. The knot will capsize (flip) into its final form under load."
             }
         ],
         "model_id": "double_sheet_bend_v1"
     },
     "57": {
         "id": 57,
-        "name": "Water Knot",
+        "name": "Double Fisherman's Knot",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Bend",
+            "Climbing",
+            "Secure"
         ],
-        "description": "The Water Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A very secure knot used to join two ropes of equal diameter, heavily used in climbing to create Prusik loops.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2299,39 +2259,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Water Knot."
+                "instruction": "Lay the ends of the two ropes parallel to each other."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Take the working end of the first rope and wrap it twice around the second rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Water Knot pattern."
+                "instruction": "Pass the working end back through the two wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Repeat steps 2 and 3 with the working end of the second rope around the first rope."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Water Knot."
+                "instruction": "Pull the standing parts of both ropes to slide the two knots tightly together."
             }
         ],
         "model_id": "water_knot_v1"
     },
     "58": {
         "id": 58,
-        "name": "Double Fisherman's Knot",
+        "name": "Zeppelin Bend",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Bend",
+            "Secure",
+            "Non-jamming"
         ],
-        "description": "The Double Fisherman's Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "An incredibly secure bend that resists jamming. Often considered superior to the Hunter's Bend or Alpine Butterfly Bend.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2340,39 +2300,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Double Fisherman's Knot."
+                "instruction": "Form an overhand loop in the first rope (working end on top)."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Form an underhand loop in the second rope (working end on bottom)."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Double Fisherman's Knot pattern."
+                "instruction": "Place the first loop directly on top of the second loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end of the first rope down through both loops."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Double Fisherman's Knot."
+                "instruction": "Pass the working end of the second rope up through both loops and pull all ends tight."
             }
         ],
         "model_id": "double_fisherman_s_knot_v1"
     },
     "59": {
         "id": 59,
-        "name": "Ashley's Bend",
+        "name": "Hunter's Bend",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
             "Bend",
-            "Ranger",
-            "Scouting"
+            "Secure",
+            "Interlocking"
         ],
-        "description": "The Ashley's Bend is an essential knot in the Bend category, commonly used in Ranger level scouting activities.",
+        "description": "A strong, interlocking bend discovered in the 1970s. Similar to the Zeppelin Bend but tied slightly differently.",
         "scenarios": [
             "Used in camping scenarios requiring a Bend",
             "Standard requirement for the Ranger rank",
@@ -2381,39 +2341,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Ashley's Bend."
+                "instruction": "Lay the two ropes parallel, pointing in opposite directions."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Bend."
+                "instruction": "Form a loop by crossing both ropes over themselves."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Ashley's Bend pattern."
+                "instruction": "Pass the working end of the first rope down through the loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end of the second rope up through the loop."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Ashley's Bend."
+                "instruction": "Dress the knot carefully so the two interlocking overhand knots sit snugly together."
             }
         ],
         "model_id": "ashley_s_bend_v1"
     },
     "60": {
         "id": 60,
-        "name": "Hunter's Bend",
+        "name": "Alpine Butterfly Bend",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
             "Bend",
-            "Ranger",
-            "Scouting"
+            "Climbing",
+            "Secure"
         ],
-        "description": "The Hunter's Bend is an essential knot in the Bend category, commonly used in Ranger level scouting activities.",
+        "description": "The Alpine Butterfly tied with two ropes instead of one, used to join them securely.",
         "scenarios": [
             "Used in camping scenarios requiring a Bend",
             "Standard requirement for the Ranger rank",
@@ -2422,39 +2382,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Hunter's Bend."
+                "instruction": "Lay the two ends parallel."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Bend."
+                "instruction": "Wrap both ropes together around your hand three times."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Hunter's Bend pattern."
+                "instruction": "Pick up the middle pair of wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass them over the outer wraps and back under."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Hunter's Bend."
+                "instruction": "Slide off your hand and pull tight."
             }
         ],
         "model_id": "hunter_s_bend_v1"
     },
     "61": {
         "id": 61,
-        "name": "Zeppelin Bend",
+        "name": "Ashley's Bend",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
             "Bend",
-            "Ranger",
-            "Scouting"
+            "Secure",
+            "Bulky"
         ],
-        "description": "The Zeppelin Bend is an essential knot in the Bend category, commonly used in Ranger level scouting activities.",
+        "description": "A highly secure bend invented by knot expert Clifford Ashley. It is bulky but very reliable.",
         "scenarios": [
             "Used in camping scenarios requiring a Bend",
             "Standard requirement for the Ranger rank",
@@ -2463,39 +2423,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Zeppelin Bend."
+                "instruction": "Tie an overhand knot in the first rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Bend."
+                "instruction": "Pass the working end of the second rope through the loop of the overhand knot."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Zeppelin Bend pattern."
+                "instruction": "Tie an overhand knot in the second rope, interlocking it with the first."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass both working ends through the central space between the two knots."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Zeppelin Bend."
+                "instruction": "Pull all ends tight to lock."
             }
         ],
         "model_id": "zeppelin_bend_v1"
     },
     "62": {
         "id": 62,
-        "name": "Blood Knot",
+        "name": "Water Knot",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Bend",
+            "Webbing",
+            "Climbing"
         ],
-        "description": "The Blood Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "The standard knot used to join two pieces of flat webbing together.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2504,39 +2464,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Blood Knot."
+                "instruction": "Tie a loose overhand knot in the first piece of webbing."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Take the second piece of webbing and trace the path of the overhand knot exactly in reverse."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Blood Knot pattern."
+                "instruction": "Ensure the webbing lies perfectly flat with no twists."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Leave tails at least 3 inches long."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Blood Knot."
+                "instruction": "Pull all four ends tightly to secure."
             }
         ],
         "model_id": "blood_knot_v1"
     },
     "63": {
         "id": 63,
-        "name": "Nail Knot",
+        "name": "Blood Knot",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Bend",
+            "Fishing",
+            "Monofilament"
         ],
-        "description": "The Nail Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A neat, streamlined knot used to join two fishing lines of similar diameter.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2545,23 +2505,23 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Nail Knot."
+                "instruction": "Overlap the ends of the two lines."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Wrap the first line around the second line 5 times."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Nail Knot pattern."
+                "instruction": "Pass the end of the first line back between the two lines."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Wrap the second line around the first line 5 times in the opposite direction."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Nail Knot."
+                "instruction": "Pass the end of the second line back through the same center gap, but in the opposite direction. Pull tight."
             }
         ],
         "model_id": "nail_knot_v1"
@@ -2573,11 +2533,11 @@ export const KNOT_REGISTRY = {
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Bend",
+            "Fishing",
+            "Unequal Lines"
         ],
-        "description": "The Albright Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "Used to join two fishing lines of unequal diameter, such as a braided main line to a monofilament leader.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2586,39 +2546,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Albright Knot."
+                "instruction": "Form a bight in the thicker line."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the thinner line through the bight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Albright Knot pattern."
+                "instruction": "Wrap the thinner line around both legs of the bight 10 times, working back towards the loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the end of the thinner line back out through the bight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Albright Knot."
+                "instruction": "Lubricate and pull tight."
             }
         ],
         "model_id": "albright_knot_v1"
     },
     "65": {
         "id": 65,
-        "name": "Surgeon's Knot",
+        "name": "Nail Knot",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Bend",
+            "Fishing",
+            "Smooth"
         ],
-        "description": "The Surgeon's Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A smooth, compact knot used to attach a leader to a fly line. Traditionally tied using a small nail or tube.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2627,39 +2587,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Surgeon's Knot."
+                "instruction": "Lay a small tube (or nail) alongside the two overlapping lines."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Wrap the working end of the leader around the fly line, the leader itself, and the tube 5 or 6 times."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Surgeon's Knot pattern."
+                "instruction": "Pass the working end back through the tube."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Slide the tube out while holding the wraps in place."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Surgeon's Knot."
+                "instruction": "Pull the ends to tighten the wraps securely."
             }
         ],
         "model_id": "surgeon_s_knot_v1"
     },
     "66": {
         "id": 66,
-        "name": "Weaver's Knot",
+        "name": "Double Sheet Bend",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Bend",
+            "Joining",
+            "Unequal Ropes"
         ],
-        "description": "The Weaver's Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A more secure version of the Sheet Bend, used when the ropes are significantly different in size or very slippery.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2668,39 +2628,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Weaver's Knot."
+                "instruction": "Form a bight in the thicker rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the thinner rope up through the bight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Weaver's Knot pattern."
+                "instruction": "Wrap the thinner rope around the back of the bight."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make a second wrap around the back of the bight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Weaver's Knot."
+                "instruction": "Tuck the thinner rope under its own standing part and pull tight."
             }
         ],
         "model_id": "weaver_s_knot_v1"
     },
     "67": {
         "id": 67,
-        "name": "Vice Versa Bend",
+        "name": "Heaving Line Bend",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
             "Bend",
-            "Ranger",
-            "Scouting"
+            "Throwing",
+            "Temporary"
         ],
-        "description": "The Vice Versa Bend is an essential knot in the Bend category, commonly used in Ranger level scouting activities.",
+        "description": "Used to attach a lightweight heaving line to a heavy hawser (mooring line) to pull it ashore.",
         "scenarios": [
             "Used in camping scenarios requiring a Bend",
             "Standard requirement for the Ranger rank",
@@ -2709,39 +2669,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Vice Versa Bend."
+                "instruction": "Form a bight in the heavy rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Bend."
+                "instruction": "Pass the light rope up through the bight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Vice Versa Bend pattern."
+                "instruction": "Wrap the light rope around the standing part of the heavy rope."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Wrap the light rope around the working end of the heavy rope."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Vice Versa Bend."
+                "instruction": "Tuck the light rope under its own standing part and pull tight."
             }
         ],
         "model_id": "vice_versa_bend_v1"
     },
     "68": {
         "id": 68,
-        "name": "Simple Simon Under",
+        "name": "Surgeon's Knot",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Binding",
+            "Medical",
+            "Friction"
         ],
-        "description": "The Simple Simon Under is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A modification of the Square Knot with an extra twist on the first half, preventing it from slipping while tying the second half.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2750,39 +2710,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Simple Simon Under."
+                "instruction": "Cross the right end over the left and tuck it under twice (an extra twist)."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pull the two ends to tighten the first half."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Simple Simon Under pattern."
+                "instruction": "Cross the left end over the right and tuck it under once."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Simple Simon Under."
+                "instruction": "Pull all ends tight to lock the knot."
             }
         ],
         "model_id": "simple_simon_under_v1"
     },
     "69": {
         "id": 69,
-        "name": "Simple Simon Over",
+        "name": "Constrictor Knot",
         "program": "Ranger",
         "difficulty": "Hard",
         "xp_value": 150,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Binding",
+            "Permanent",
+            "Secure"
         ],
-        "description": "The Simple Simon Over is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "One of the most secure binding knots ever invented. Once tightened, it is nearly impossible to untie and must often be cut.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2791,39 +2747,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Simple Simon Over."
+                "instruction": "Wrap the rope around the object."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Cross the working end over the standing part to form an X."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Simple Simon Over pattern."
+                "instruction": "Wrap the working end around the object again."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end under the X, trapping it under the standing part."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Simple Simon Over."
+                "instruction": "Pull both ends extremely tight."
             }
         ],
         "model_id": "simple_simon_over_v1"
     },
     "70": {
         "id": 70,
-        "name": "Overhand Knot",
+        "name": "Boa Knot",
         "program": "Ranger",
-        "difficulty": "Hard",
-        "xp_value": 150,
+        "difficulty": "Expert",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Ranger",
-            "Scouting"
+            "Binding",
+            "Secure",
+            "Bulky"
         ],
-        "description": "The Overhand Knot is an essential knot in the Utility category, commonly used in Ranger level scouting activities.",
+        "description": "A very secure binding knot similar to the Constrictor Knot, but bulkier. Invented by weaver Peter Collingwood.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Ranger rank",
@@ -2832,39 +2788,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Overhand Knot."
+                "instruction": "Wrap the rope around the object twice."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Take the two ends and twist them around each other."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Overhand Knot pattern."
+                "instruction": "Tuck the ends under the wraps on opposite sides."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Overhand Knot."
+                "instruction": "Pull both ends tight to lock the twists under the wraps."
             }
         ],
         "model_id": "overhand_knot_v1"
     },
     "71": {
         "id": 71,
-        "name": "Double Overhand Knot",
+        "name": "Strangle Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Binding",
+            "Secure",
+            "Temporary"
         ],
-        "description": "The Double Overhand Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A simple binding knot, essentially a double overhand knot tied around an object. Similar to the Constrictor but less prone to jamming permanently.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -2873,39 +2825,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Double Overhand Knot."
+                "instruction": "Wrap the rope around the object."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Cross the working end over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Double Overhand Knot pattern."
+                "instruction": "Make a second wrap around the object."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck the working end under both wraps."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Double Overhand Knot."
+                "instruction": "Pull both ends tight."
             }
         ],
         "model_id": "double_overhand_knot_v1"
     },
     "72": {
         "id": 72,
-        "name": "Stevedore Knot",
+        "name": "Transom Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Binding",
+            "Lashing",
+            "Crossed"
         ],
-        "description": "The Stevedore Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A knot used to secure two crossed poles. It acts as a miniature lashing.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -2914,39 +2866,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Stevedore Knot."
+                "instruction": "Place two poles across each other."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the rope behind the vertical pole, below the horizontal one."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Stevedore Knot pattern."
+                "instruction": "Bring both ends up and cross them over the horizontal pole."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the ends behind the vertical pole (above the horizontal one) and tie a square knot."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Stevedore Knot."
+                "instruction": "Pull extremely tight."
             }
         ],
         "model_id": "stevedore_knot_v1"
     },
     "73": {
         "id": 73,
-        "name": "Ashley's Stopper Knot",
+        "name": "Packer's Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
-            "Stopper",
-            "Woodsman",
-            "Scouting"
+            "Binding",
+            "Tension",
+            "Parcels"
         ],
-        "description": "The Ashley's Stopper Knot is an essential knot in the Stopper category, commonly used in Woodsman level scouting activities.",
+        "description": "A binding knot traditionally used by merchants and butchers to tie parcels securely.",
         "scenarios": [
             "Used in camping scenarios requiring a Stopper",
             "Standard requirement for the Woodsman rank",
@@ -2955,39 +2907,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Ashley's Stopper Knot."
+                "instruction": "Tie a figure eight knot near the end of the string, leaving a loop."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Stopper."
+                "instruction": "Pass the working end around the parcel."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Ashley's Stopper Knot pattern."
+                "instruction": "Pass the working end through the loop of the figure eight."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pull the working end to tension the string around the parcel."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Ashley's Stopper Knot."
+                "instruction": "Secure it with a half hitch around the standing part."
             }
         ],
         "model_id": "ashley_s_stopper_knot_v1"
     },
     "74": {
         "id": 74,
-        "name": "Monkey's Fist",
+        "name": "Miller's Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Binding",
+            "Sacks",
+            "Secure"
         ],
-        "description": "The Monkey's Fist is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A binding knot used to tie the neck of a sack or bag tightly.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -2996,39 +2948,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Monkey's Fist."
+                "instruction": "Wrap the string around the neck of the sack."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Cross the working end over the standing part."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Monkey's Fist pattern."
+                "instruction": "Make a second wrap, crossing over the first wrap."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck the working end under the first wrap."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Monkey's Fist."
+                "instruction": "Pull both ends to cinch the sack closed."
             }
         ],
         "model_id": "monkey_s_fist_v1"
     },
     "75": {
         "id": 75,
-        "name": "Heaving Line Knot",
+        "name": "Ashley's Stopper Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Stopper",
+            "Bulky",
+            "Secure"
         ],
-        "description": "The Heaving Line Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A bulky, three-lobed stopper knot developed by Clifford Ashley. Excellent for keeping a rope from slipping through a hole.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3037,39 +2989,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Heaving Line Knot."
+                "instruction": "Tie an overhand knot."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the working end through the loop of the overhand knot a second time."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Heaving Line Knot pattern."
+                "instruction": "Take the working end and pass it through the new loop just created."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Carefully dress the knot so it forms three distinct lobes."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Heaving Line Knot."
+                "instruction": "Pull tight."
             }
         ],
         "model_id": "heaving_line_knot_v1"
     },
     "76": {
         "id": 76,
-        "name": "Oysterman's Stopper",
+        "name": "Stevedore Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
             "Stopper",
-            "Woodsman",
-            "Scouting"
+            "Bulky",
+            "Heavy"
         ],
-        "description": "The Oysterman's Stopper is an essential knot in the Stopper category, commonly used in Woodsman level scouting activities.",
+        "description": "A bulky stopper knot, bulkier than a Figure Eight, traditionally used by stevedores loading cargo.",
         "scenarios": [
             "Used in camping scenarios requiring a Stopper",
             "Standard requirement for the Woodsman rank",
@@ -3078,39 +3030,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Oysterman's Stopper."
+                "instruction": "Form a loop in the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Stopper."
+                "instruction": "Pass the working end around the standing part three times."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Oysterman's Stopper pattern."
+                "instruction": "Pass the working end down through the loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Oysterman's Stopper."
+                "instruction": "Pull tight to form a large, barrel-shaped stopper."
             }
         ],
         "model_id": "oysterman_s_stopper_v1"
     },
     "77": {
         "id": 77,
-        "name": "Matthew Walker Knot",
+        "name": "Monkey's Fist",
         "program": "Woodsman",
         "difficulty": "Expert",
-        "xp_value": 200,
+        "xp_value": 250,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Stopper",
+            "Weight",
+            "Throwing"
         ],
-        "description": "The Matthew Walker Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A heavy, spherical knot tied at the end of a heaving line to give it weight for throwing.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3119,39 +3067,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Matthew Walker Knot."
+                "instruction": "Wrap the rope around your fingers (or a small weighted core) 3 times."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Wrap the rope 3 times horizontally around the first set of wraps."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Matthew Walker Knot pattern."
+                "instruction": "Wrap the rope 3 times vertically, passing inside the first wraps but outside the second wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Remove your fingers (if used) and slowly tighten each wrap in sequence."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Matthew Walker Knot."
+                "instruction": "The final knot should resemble a woven ball."
             }
         ],
         "model_id": "matthew_walker_knot_v1"
     },
     "78": {
         "id": 78,
-        "name": "Wall Knot",
+        "name": "Double Overhand Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Easy",
+        "xp_value": 50,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Stopper",
+            "Basic",
+            "Secure"
         ],
-        "description": "The Wall Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A larger version of the standard overhand knot, used as a stopper or as part of a Double Fisherman's knot.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3160,39 +3108,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Wall Knot."
+                "instruction": "Form a loop in the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the working end through the loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Wall Knot pattern."
+                "instruction": "Pass the working end through the loop a second time."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Wall Knot."
+                "instruction": "Pull both ends tight."
             }
         ],
         "model_id": "wall_knot_v1"
     },
     "79": {
         "id": 79,
-        "name": "Crown Knot",
+        "name": "Multiple Overhand Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Medium",
+        "xp_value": 75,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Stopper",
+            "Bulky",
+            "Decorative"
         ],
-        "description": "The Crown Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "Also known as a Blood Knot (stopper version). The rope is passed through the loop multiple times to create a long, cylindrical stopper.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3201,39 +3145,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Crown Knot."
+                "instruction": "Form a loop in the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the working end through the loop 4 or 5 times."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Crown Knot pattern."
+                "instruction": "Carefully pull the standing part and working end while twisting the wraps."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Crown Knot."
+                "instruction": "The wraps should stack neatly into a barrel shape."
             }
         ],
         "model_id": "crown_knot_v1"
     },
     "80": {
         "id": 80,
-        "name": "Constrictor Knot",
+        "name": "Oysterman's Stopper",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
-            "Binding",
-            "Woodsman",
-            "Scouting"
+            "Stopper",
+            "Symmetrical",
+            "Secure"
         ],
-        "description": "The Constrictor Knot is an essential knot in the Binding category, commonly used in Woodsman level scouting activities.",
+        "description": "A beautiful, symmetrical stopper knot that looks like a three-strand braid. Also known as the Ashley Stopper Knot.",
         "scenarios": [
             "Used in camping scenarios requiring a Binding",
             "Standard requirement for the Woodsman rank",
@@ -3242,39 +3182,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Constrictor Knot."
+                "instruction": "Tie a figure eight knot."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Binding."
+                "instruction": "Pass the working end through the top loop of the figure eight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Constrictor Knot pattern."
+                "instruction": "Pass the working end through the bottom loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Dress the knot carefully to maintain symmetry."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Constrictor Knot."
+                "instruction": "Pull tight."
             }
         ],
         "model_id": "constrictor_knot_v1"
     },
     "81": {
         "id": 81,
-        "name": "Double Constrictor Knot",
+        "name": "Crown Knot",
         "program": "Woodsman",
         "difficulty": "Expert",
         "xp_value": 200,
         "tags": [
-            "Binding",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Splicing",
+            "Foundation"
         ],
-        "description": "The Double Constrictor Knot is an essential knot in the Binding category, commonly used in Woodsman level scouting activities.",
+        "description": "A foundational knot tied in the ends of a three-strand rope to prevent fraying or to start a back splice.",
         "scenarios": [
             "Used in camping scenarios requiring a Binding",
             "Standard requirement for the Woodsman rank",
@@ -3283,39 +3223,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Double Constrictor Knot."
+                "instruction": "Unlay (untwist) the three strands of the rope for a few inches."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Binding."
+                "instruction": "Take strand 1 and lay it over strand 2, forming a loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Double Constrictor Knot pattern."
+                "instruction": "Take strand 2 and lay it over the end of strand 1 and across strand 3."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Take strand 3 and pass it over strand 2 and down through the loop made by strand 1."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Double Constrictor Knot."
+                "instruction": "Pull all three strands evenly to form a neat triangle on top of the rope."
             }
         ],
         "model_id": "double_constrictor_knot_v1"
     },
     "82": {
         "id": 82,
-        "name": "Boa Knot",
+        "name": "Wall Knot",
         "program": "Woodsman",
         "difficulty": "Expert",
         "xp_value": 200,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Splicing",
+            "Foundation"
         ],
-        "description": "The Boa Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "The inverse of the Crown Knot. Tied in the ends of a three-strand rope, it forms a bump that stops the rope from unlaying.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3324,39 +3264,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Boa Knot."
+                "instruction": "Unlay the three strands."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Take strand 1 and pass it under strand 2, forming a loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Boa Knot pattern."
+                "instruction": "Take strand 2 and pass it under strand 1 and under strand 3."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Take strand 3 and pass it under strand 2 and up through the loop made by strand 1."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Boa Knot."
+                "instruction": "Pull all three strands evenly. The knot forms a collar around the rope."
             }
         ],
         "model_id": "boa_knot_v1"
     },
     "83": {
         "id": 83,
-        "name": "Strangle Knot",
+        "name": "Wall and Crown",
         "program": "Woodsman",
         "difficulty": "Expert",
-        "xp_value": 200,
+        "xp_value": 250,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Stopper",
+            "Complex"
         ],
-        "description": "The Strangle Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A combination of the Wall Knot and Crown Knot. It forms a large, secure stopper at the end of a three-strand rope.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3365,39 +3305,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Strangle Knot."
+                "instruction": "Tie a Wall Knot in the unlayed strands."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Do not pull the Wall Knot completely tight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Strangle Knot pattern."
+                "instruction": "Tie a Crown Knot directly on top of the Wall Knot using the same strands."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Carefully work the slack out of both knots."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Strangle Knot."
+                "instruction": "The resulting knot is round and very secure."
             }
         ],
         "model_id": "strangle_knot_v1"
     },
     "84": {
         "id": 84,
-        "name": "Surgeon's Knot (Binding)",
+        "name": "Matthew Walker Knot",
         "program": "Woodsman",
         "difficulty": "Expert",
-        "xp_value": 200,
+        "xp_value": 300,
         "tags": [
-            "Binding",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Stopper",
+            "Classic"
         ],
-        "description": "The Surgeon's Knot (Binding) is an essential knot in the Binding category, commonly used in Woodsman level scouting activities.",
+        "description": "A highly respected and complex stopper knot tied in three-strand rope. Often used on bucket handles or lanyards.",
         "scenarios": [
             "Used in camping scenarios requiring a Binding",
             "Standard requirement for the Woodsman rank",
@@ -3406,39 +3346,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Surgeon's Knot (Binding)."
+                "instruction": "Unlay the three strands."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Binding."
+                "instruction": "Pass strand 1 around the rope and up through its own loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Surgeon's Knot (Binding) pattern."
+                "instruction": "Pass strand 2 around the rope, under strand 1's loop, and up through its own loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass strand 3 around the rope, under loops 1 and 2, and up through its own loop."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Surgeon's Knot (Binding)."
+                "instruction": "Carefully tighten all three strands simultaneously, rolling the knot up the rope."
             }
         ],
         "model_id": "surgeon_s_knot_binding_v1"
     },
     "85": {
         "id": 85,
-        "name": "Reef Knot",
+        "name": "Diamond Knot",
         "program": "Woodsman",
         "difficulty": "Expert",
-        "xp_value": 200,
+        "xp_value": 250,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Lanyard",
+            "Symmetrical"
         ],
-        "description": "The Reef Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A beautiful, symmetrical knot often tied in the middle of a lanyard or zipper pull. Also known as the Lanyard Knot.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3447,39 +3387,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Reef Knot."
+                "instruction": "Form a Carrick Bend using the two strands of the lanyard."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Take the working end of the right strand, pass it around the standing part, and up through the center of the Carrick Bend."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Reef Knot pattern."
+                "instruction": "Take the working end of the left strand, pass it around the standing part, and up through the center."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Both ends should now exit parallel through the center of the knot."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Reef Knot."
+                "instruction": "Carefully work the slack out to form a tight, diamond-patterned ball."
             }
         ],
         "model_id": "reef_knot_v1"
     },
     "86": {
         "id": 86,
-        "name": "Thief Knot",
+        "name": "Turk's Head",
         "program": "Woodsman",
         "difficulty": "Expert",
-        "xp_value": 200,
+        "xp_value": 300,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Woggle",
+            "Classic"
         ],
-        "description": "The Thief Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A classic decorative knot that forms a woven cylinder around an object. Often used as a scout woggle (neckerchief slide).",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3488,39 +3428,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Thief Knot."
+                "instruction": "Wrap the rope around a cylinder (like your fingers or a pipe)."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Weave the working end over and under the standing part to form a continuous braid."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Thief Knot pattern."
+                "instruction": "The complexity is defined by the number of 'leads' (strands) and 'bights' (scallops on the edge)."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Once the basic pattern is established, follow the rope around a second or third time to double or triple the knot."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Thief Knot."
+                "instruction": "Carefully tighten the knot around the object."
             }
         ],
         "model_id": "thief_knot_v1"
     },
     "87": {
         "id": 87,
-        "name": "Granny Knot",
+        "name": "Carrick Mat",
         "program": "Woodsman",
         "difficulty": "Expert",
         "xp_value": 200,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Flat",
+            "Mat"
         ],
-        "description": "The Granny Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A flat, decorative knot based on the Carrick Bend. Traditionally used as a chafe mat on ships.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3529,39 +3469,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Granny Knot."
+                "instruction": "Form a large Carrick Bend on a flat surface."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Do not pull it tight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Granny Knot pattern."
+                "instruction": "Take the working ends and follow the path of the knot a second time."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Follow the path a third time if desired."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Granny Knot."
+                "instruction": "Push the strands tightly together so they lie flat against each other."
             }
         ],
         "model_id": "granny_knot_v1"
     },
     "88": {
         "id": 88,
-        "name": "Grief Knot",
+        "name": "Ocean Plait Mat",
         "program": "Woodsman",
         "difficulty": "Expert",
-        "xp_value": 200,
+        "xp_value": 250,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Decorative",
+            "Flat",
+            "Complex"
         ],
-        "description": "The Grief Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A more complex flat knot than the Carrick Mat, forming an oval or rectangular woven pad.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3570,39 +3510,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Grief Knot."
+                "instruction": "Form a series of interlocking loops on a flat surface."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Weave the working end over and under the loops in a specific pattern to create the plait."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Grief Knot pattern."
+                "instruction": "Once the basic single-strand pattern is complete, follow the path a second and third time."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Grief Knot."
+                "instruction": "Carefully adjust the tension so the mat is flat and even."
             }
         ],
         "model_id": "grief_knot_v1"
     },
     "89": {
         "id": 89,
-        "name": "Packer's Knot",
+        "name": "Grief Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Easy",
+        "xp_value": 25,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Bend",
+            "Failure",
+            "Warning"
         ],
-        "description": "The Packer's Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "A knot that looks like a Square Knot or Granny Knot but fails immediately under load. Also called the Whatknot. Included as a warning.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3611,39 +3547,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Packer's Knot."
+                "instruction": "Cross the right end over the left."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Cross the right end over the left again."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Packer's Knot pattern."
+                "instruction": "This creates a knot where the strands exit on opposite sides of the loops."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Packer's Knot."
+                "instruction": "Pull the ends. The knot will immediately slip and pull apart."
             }
         ],
         "model_id": "packer_s_knot_v1"
     },
     "90": {
         "id": 90,
-        "name": "Miller's Knot",
+        "name": "Granny Knot",
         "program": "Woodsman",
-        "difficulty": "Expert",
-        "xp_value": 200,
+        "difficulty": "Easy",
+        "xp_value": 25,
         "tags": [
-            "Utility",
-            "Woodsman",
-            "Scouting"
+            "Binding",
+            "Failure",
+            "Warning"
         ],
-        "description": "The Miller's Knot is an essential knot in the Utility category, commonly used in Woodsman level scouting activities.",
+        "description": "An incorrectly tied Square Knot. It is insecure and will slip under heavy load. Included for educational purposes.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Woodsman rank",
@@ -3652,39 +3584,35 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Miller's Knot."
+                "instruction": "Cross the right end over the left and tuck it under."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Cross the right end over the left again and tuck it under."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Miller's Knot pattern."
+                "instruction": "Notice that the ends exit the loops on opposite sides, unlike a Square Knot."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
-            },
-            {
-                "step": 5,
-                "instruction": "Pull tight to secure the Miller's Knot."
+                "instruction": "Pull tight. The knot will distort and slip under strain."
             }
         ],
         "model_id": "miller_s_knot_v1"
     },
     "91": {
         "id": 91,
-        "name": "Square Lashing",
+        "name": "Thief Knot",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Easy",
+        "xp_value": 25,
         "tags": [
-            "Lashing",
-            "Expert",
-            "Scouting"
+            "Bend",
+            "Failure",
+            "Warning"
         ],
-        "description": "The Square Lashing is an essential knot in the Lashing category, commonly used in Expert level scouting activities.",
+        "description": "Looks exactly like a Square Knot, but the short ends exit on opposite sides. It slips under load. Legend says sailors used it to detect thieves.",
         "scenarios": [
             "Used in camping scenarios requiring a Lashing",
             "Standard requirement for the Expert rank",
@@ -3693,39 +3621,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Square Lashing."
+                "instruction": "Form a bight in the first rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Lashing."
+                "instruction": "Pass the working end of the second rope up through the bight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Square Lashing pattern."
+                "instruction": "Wrap it around the back of the bight."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass it back down through the bight, ensuring the two short ends are on opposite sides of the knot."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Square Lashing."
+                "instruction": "Pull tight. Do not use for critical loads."
             }
         ],
         "model_id": "square_lashing_v1"
     },
     "92": {
         "id": 92,
-        "name": "Diagonal Lashing",
+        "name": "Square Lashing",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Hard",
+        "xp_value": 200,
         "tags": [
             "Lashing",
-            "Expert",
-            "Scouting"
+            "Pioneering",
+            "Right Angles"
         ],
-        "description": "The Diagonal Lashing is an essential knot in the Lashing category, commonly used in Expert level scouting activities.",
+        "description": "The fundamental lashing used to bind two poles together at a 90-degree angle.",
         "scenarios": [
             "Used in camping scenarios requiring a Lashing",
             "Standard requirement for the Expert rank",
@@ -3734,39 +3662,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Diagonal Lashing."
+                "instruction": "Tie a clove hitch around the vertical pole, just below the cross piece."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Lashing."
+                "instruction": "Wrap the rope up and over the horizontal pole, around the back of the vertical pole, and down over the horizontal pole."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Diagonal Lashing pattern."
+                "instruction": "Repeat this wrapping pattern 3 or 4 times, pulling tightly."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make 2 or 3 'frapping' turns (wrapping the rope between the two poles to pull the lashing tight)."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Diagonal Lashing."
+                "instruction": "Finish with a clove hitch on the horizontal pole."
             }
         ],
         "model_id": "diagonal_lashing_v1"
     },
     "93": {
         "id": 93,
-        "name": "Shear Lashing",
+        "name": "Diagonal Lashing",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Hard",
+        "xp_value": 200,
         "tags": [
             "Lashing",
-            "Expert",
-            "Scouting"
+            "Pioneering",
+            "Crossed Poles"
         ],
-        "description": "The Shear Lashing is an essential knot in the Lashing category, commonly used in Expert level scouting activities.",
+        "description": "Used to bind two poles together where they cross at an angle other than 90 degrees, or to pull springing poles together.",
         "scenarios": [
             "Used in camping scenarios requiring a Lashing",
             "Standard requirement for the Expert rank",
@@ -3775,23 +3703,23 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Shear Lashing."
+                "instruction": "Tie a timber hitch diagonally around the intersection of both poles."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Lashing."
+                "instruction": "Make 3 or 4 wrapping turns along the same diagonal."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Shear Lashing pattern."
+                "instruction": "Make 3 or 4 wrapping turns across the opposite diagonal."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make 2 or 3 tight frapping turns between the poles."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Shear Lashing."
+                "instruction": "Finish with a clove hitch on any convenient pole."
             }
         ],
         "model_id": "shear_lashing_v1"
@@ -3800,14 +3728,14 @@ export const KNOT_REGISTRY = {
         "id": 94,
         "name": "Round Lashing",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Medium",
+        "xp_value": 150,
         "tags": [
             "Lashing",
-            "Expert",
-            "Scouting"
+            "Pioneering",
+            "Parallel Poles"
         ],
-        "description": "The Round Lashing is an essential knot in the Lashing category, commonly used in Expert level scouting activities.",
+        "description": "Used to lash two parallel poles together to extend their length (like a flagpole).",
         "scenarios": [
             "Used in camping scenarios requiring a Lashing",
             "Standard requirement for the Expert rank",
@@ -3816,39 +3744,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Round Lashing."
+                "instruction": "Overlap the two poles by at least a quarter of their length."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Lashing."
+                "instruction": "Tie a clove hitch around both poles near one end of the overlap."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Round Lashing pattern."
+                "instruction": "Make 7 or 8 tight wrapping turns around both poles."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make 2 or 3 frapping turns between the poles (if space allows, otherwise skip)."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Round Lashing."
+                "instruction": "Finish with a clove hitch. Repeat the entire process at the other end of the overlap."
             }
         ],
         "model_id": "round_lashing_v1"
     },
     "95": {
         "id": 95,
-        "name": "Tripod Lashing",
+        "name": "Shear Lashing",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Lashing",
-            "Expert",
-            "Scouting"
+            "Pioneering",
+            "A-Frame"
         ],
-        "description": "The Tripod Lashing is an essential knot in the Lashing category, commonly used in Expert level scouting activities.",
+        "description": "Used to lash two poles together at one end to form an A-frame or shear legs.",
         "scenarios": [
             "Used in camping scenarios requiring a Lashing",
             "Standard requirement for the Expert rank",
@@ -3857,39 +3785,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Tripod Lashing."
+                "instruction": "Lay the two poles parallel to each other."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Lashing."
+                "instruction": "Tie a clove hitch around one pole."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Tripod Lashing pattern."
+                "instruction": "Make 6 or 7 loose wrapping turns around both poles."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make 2 frapping turns loosely between the poles."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Tripod Lashing."
+                "instruction": "Finish with a clove hitch. Open the poles like scissors to tighten the lashing."
             }
         ],
         "model_id": "tripod_lashing_v1"
     },
     "96": {
         "id": 96,
-        "name": "Floor Lashing",
+        "name": "Tripod Lashing",
         "program": "Expert",
         "difficulty": "Expert",
         "xp_value": 250,
         "tags": [
             "Lashing",
-            "Expert",
-            "Scouting"
+            "Pioneering",
+            "Structure"
         ],
-        "description": "The Floor Lashing is an essential knot in the Lashing category, commonly used in Expert level scouting activities.",
+        "description": "Used to lash three poles together to form a freestanding tripod.",
         "scenarios": [
             "Used in camping scenarios requiring a Lashing",
             "Standard requirement for the Expert rank",
@@ -3898,39 +3826,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Floor Lashing."
+                "instruction": "Lay three poles side by side, with the center pole pointing the opposite direction."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Lashing."
+                "instruction": "Tie a clove hitch to one of the outer poles."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Floor Lashing pattern."
+                "instruction": "Weave the rope loosely over and under the three poles 5 or 6 times."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Make loose frapping turns in the two gaps between the poles."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Floor Lashing."
+                "instruction": "Finish with a clove hitch. Stand the poles up and spread the legs to tighten."
             }
         ],
         "model_id": "floor_lashing_v1"
     },
     "97": {
         "id": 97,
-        "name": "Japanese Mark II Square Lashing",
+        "name": "Continuous Lashing",
         "program": "Expert",
         "difficulty": "Expert",
         "xp_value": 250,
         "tags": [
             "Lashing",
-            "Expert",
-            "Scouting"
+            "Pioneering",
+            "Decking"
         ],
-        "description": "The Japanese Mark II Square Lashing is an essential knot in the Lashing category, commonly used in Expert level scouting activities.",
+        "description": "Used to lash a series of small poles (like a tabletop or deck) to two long support poles.",
         "scenarios": [
             "Used in camping scenarios requiring a Lashing",
             "Standard requirement for the Expert rank",
@@ -3939,39 +3867,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Japanese Mark II Square Lashing."
+                "instruction": "Tie a clove hitch to the support pole."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Lashing."
+                "instruction": "Lay the first small pole across the support."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Japanese Mark II Square Lashing pattern."
+                "instruction": "Bring the rope over the small pole, down, and under the support pole."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Lay the next small pole and repeat the over-under pattern."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Japanese Mark II Square Lashing."
+                "instruction": "Keep tension tight and finish with a clove hitch after the last pole."
             }
         ],
         "model_id": "japanese_mark_ii_square_lashing_v1"
     },
     "98": {
         "id": 98,
-        "name": "Common Whipping",
+        "name": "Japanese Square Lashing",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Hard",
+        "xp_value": 200,
         "tags": [
-            "Seizing",
-            "Expert",
-            "Scouting"
+            "Lashing",
+            "Pioneering",
+            "Quick"
         ],
-        "description": "The Common Whipping is an essential knot in the Seizing category, commonly used in Expert level scouting activities.",
+        "description": "A faster alternative to the standard Square Lashing, tied with a doubled rope.",
         "scenarios": [
             "Used in camping scenarios requiring a Seizing",
             "Standard requirement for the Expert rank",
@@ -3980,39 +3908,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Common Whipping."
+                "instruction": "Double the rope and pass the bight around the vertical pole, under the horizontal one."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Seizing."
+                "instruction": "Pass the two ends through the bight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Common Whipping pattern."
+                "instruction": "Separate the ends and wrap them in opposite directions over the horizontal pole and behind the vertical."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Cross them in front to form frapping turns."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Common Whipping."
+                "instruction": "Tie the two ends together with a square knot."
             }
         ],
         "model_id": "common_whipping_v1"
     },
     "99": {
         "id": 99,
-        "name": "Sailmaker's Whipping",
+        "name": "Common Whipping",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
             "Seizing",
-            "Expert",
-            "Scouting"
+            "Maintenance",
+            "Fraying"
         ],
-        "description": "The Sailmaker's Whipping is an essential knot in the Seizing category, commonly used in Expert level scouting activities.",
+        "description": "The simplest method to prevent the end of a rope from fraying by wrapping it tightly with twine.",
         "scenarios": [
             "Used in camping scenarios requiring a Seizing",
             "Standard requirement for the Expert rank",
@@ -4021,39 +3949,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Sailmaker's Whipping."
+                "instruction": "Lay a bight of twine along the end of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Seizing."
+                "instruction": "Starting from the bottom of the bight, wrap the twine tightly around the rope and the bight."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Sailmaker's Whipping pattern."
+                "instruction": "Make wraps for a distance roughly equal to the rope's diameter."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the working end of the twine through the exposed loop of the bight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Sailmaker's Whipping."
+                "instruction": "Pull the other end of the twine to drag the loop halfway under the wraps. Cut the ends flush."
             }
         ],
         "model_id": "sailmaker_s_whipping_v1"
     },
     "100": {
         "id": 100,
-        "name": "West Country Whipping",
+        "name": "Sailmaker's Whipping",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
             "Seizing",
-            "Expert",
-            "Scouting"
+            "Maintenance",
+            "Secure"
         ],
-        "description": "The West Country Whipping is an essential knot in the Seizing category, commonly used in Expert level scouting activities.",
+        "description": "A highly secure whipping for three-strand rope that will not slide off, as it follows the lay of the strands.",
         "scenarios": [
             "Used in camping scenarios requiring a Seizing",
             "Standard requirement for the Expert rank",
@@ -4062,39 +3990,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the West Country Whipping."
+                "instruction": "Unlay the end of the rope slightly."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Seizing."
+                "instruction": "Pass a bight of twine over one strand."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the West Country Whipping pattern."
+                "instruction": "Re-lay the rope and wrap the twine tightly against the lay."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Take the original bight and pass it over the end of the strand it was hooked on."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the West Country Whipping."
+                "instruction": "Pull the twine ends to tighten the bight into the groove, then tie a square knot between the strands."
             }
         ],
         "model_id": "west_country_whipping_v1"
     },
     "101": {
         "id": 101,
-        "name": "Eye Splice",
+        "name": "West Country Whipping",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Splice",
-            "Expert",
-            "Scouting"
+            "Seizing",
+            "Maintenance",
+            "Quick"
         ],
-        "description": "The Eye Splice is an essential knot in the Splice category, commonly used in Expert level scouting activities.",
+        "description": "A fast whipping method created by tying a series of overhand knots around the rope.",
         "scenarios": [
             "Used in camping scenarios requiring a Splice",
             "Standard requirement for the Expert rank",
@@ -4103,39 +4031,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Eye Splice."
+                "instruction": "Center the twine on the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Splice."
+                "instruction": "Tie a half knot (first half of a square knot) on the front of the rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Eye Splice pattern."
+                "instruction": "Bring the ends to the back and tie another half knot."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Repeat this alternating pattern until the whipping is as long as the rope's diameter."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Eye Splice."
+                "instruction": "Finish with a full square knot."
             }
         ],
         "model_id": "eye_splice_v1"
     },
     "102": {
         "id": 102,
-        "name": "Short Splice",
+        "name": "Eye Splice",
         "program": "Expert",
         "difficulty": "Expert",
-        "xp_value": 250,
+        "xp_value": 300,
         "tags": [
             "Splice",
-            "Expert",
-            "Scouting"
+            "Permanent",
+            "Loop"
         ],
-        "description": "The Short Splice is an essential knot in the Splice category, commonly used in Expert level scouting activities.",
+        "description": "The strongest method for creating a permanent loop in the end of a three-strand rope. Retains 90% of rope strength.",
         "scenarios": [
             "Used in camping scenarios requiring a Splice",
             "Standard requirement for the Expert rank",
@@ -4144,39 +4072,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Short Splice."
+                "instruction": "Unlay the three strands for about 6 inches and tape the ends."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Splice."
+                "instruction": "Form a loop of the desired size."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Short Splice pattern."
+                "instruction": "Tuck the center strand under a standing strand, against the lay."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck the left strand under the next standing strand. Tuck the right strand under the remaining standing strand."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Short Splice."
+                "instruction": "Repeat the over-and-under tucking process for at least three full rounds. Roll underfoot to smooth."
             }
         ],
         "model_id": "short_splice_v1"
     },
     "103": {
         "id": 103,
-        "name": "Long Splice",
+        "name": "Short Splice",
         "program": "Expert",
         "difficulty": "Expert",
-        "xp_value": 250,
+        "xp_value": 300,
         "tags": [
             "Splice",
-            "Expert",
-            "Scouting"
+            "Joining",
+            "Permanent"
         ],
-        "description": "The Long Splice is an essential knot in the Splice category, commonly used in Expert level scouting activities.",
+        "description": "Used to join two three-strand ropes permanently. It is very strong but doubles the thickness of the rope.",
         "scenarios": [
             "Used in camping scenarios requiring a Splice",
             "Standard requirement for the Expert rank",
@@ -4185,39 +4113,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Long Splice."
+                "instruction": "Unlay the ends of both ropes and tape the tips."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Splice."
+                "instruction": "Marry the two ends together so the strands alternate (one from left, one from right)."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Long Splice pattern."
+                "instruction": "Tie down one set of strands temporarily."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Tuck the free strands over and under the standing strands of the opposite rope, against the lay."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Long Splice."
+                "instruction": "Repeat for 3 full tucks on both sides. Roll to smooth."
             }
         ],
         "model_id": "long_splice_v1"
     },
     "104": {
         "id": 104,
-        "name": "Back Splice",
+        "name": "Long Splice",
         "program": "Expert",
         "difficulty": "Expert",
-        "xp_value": 250,
+        "xp_value": 400,
         "tags": [
             "Splice",
-            "Expert",
-            "Scouting"
+            "Joining",
+            "Pulleys"
         ],
-        "description": "The Back Splice is an essential knot in the Splice category, commonly used in Expert level scouting activities.",
+        "description": "Joins two ropes without increasing their diameter, allowing the spliced section to run through a pulley.",
         "scenarios": [
             "Used in camping scenarios requiring a Splice",
             "Standard requirement for the Expert rank",
@@ -4226,39 +4154,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Back Splice."
+                "instruction": "Unlay the ends of both ropes for a very long distance (15-20 turns)."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Splice."
+                "instruction": "Marry the ends together."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Back Splice pattern."
+                "instruction": "Unlay one strand from the left rope and lay the corresponding right strand into the empty groove."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Repeat in the opposite direction with another pair of strands."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Back Splice."
+                "instruction": "Tie the opposing pairs together with overhand knots and tuck the tails. Cut flush."
             }
         ],
         "model_id": "back_splice_v1"
     },
     "105": {
         "id": 105,
-        "name": "Turk's Head",
+        "name": "Back Splice",
         "program": "Expert",
         "difficulty": "Expert",
         "xp_value": 250,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Splice",
+            "Stopper",
+            "Maintenance"
         ],
-        "description": "The Turk's Head is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "A permanent method to prevent a three-strand rope from fraying, forming a bulky end.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4267,39 +4195,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Turk's Head."
+                "instruction": "Unlay the ends of the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Tie a Crown Knot to redirect the strands back down the rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Turk's Head pattern."
+                "instruction": "Take each strand and tuck it over one standing strand and under the next."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Complete 3 full rounds of tucks."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Turk's Head."
+                "instruction": "Roll the splice to smooth it and cut the tails flush."
             }
         ],
         "model_id": "turk_s_head_v1"
     },
     "106": {
         "id": 106,
-        "name": "Carrick Mat",
+        "name": "Grummet",
         "program": "Expert",
         "difficulty": "Expert",
-        "xp_value": 250,
+        "xp_value": 300,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Ring",
+            "Ropework"
         ],
-        "description": "The Carrick Mat is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "A continuous ring of rope made from a single strand, often used for quoits or rope handles.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4308,39 +4236,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Carrick Mat."
+                "instruction": "Carefully unlay a single strand from a three-strand rope, keeping its spiral shape intact."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Form a loop of the desired size with the strand."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Carrick Mat pattern."
+                "instruction": "Follow the spiral groove of the loop with the working end."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Continue wrapping until the strand has completed three full circuits."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Carrick Mat."
+                "instruction": "The ends will meet. Tie them with an overhand knot and tuck the tails into the lay."
             }
         ],
         "model_id": "carrick_mat_v1"
     },
     "107": {
         "id": 107,
-        "name": "Ocean Plait Mat",
+        "name": "Chain Sinnet",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Medium",
+        "xp_value": 100,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Shortening",
+            "Storage"
         ],
-        "description": "The Ocean Plait Mat is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "Also known as a Monkey Braid. A method of shortening a rope into a thick chain that will not tangle.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4349,39 +4277,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Ocean Plait Mat."
+                "instruction": "Form a slip knot near the anchor point."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Reach through the loop and pull a bight of the standing part through."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Ocean Plait Mat pattern."
+                "instruction": "Reach through the new loop and pull another bight through."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Repeat this process to form the chain."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Ocean Plait Mat."
+                "instruction": "To lock, pull the very end of the rope completely through the final loop."
             }
         ],
         "model_id": "ocean_plait_mat_v1"
     },
     "108": {
         "id": 108,
-        "name": "Lanyard Knot",
+        "name": "Crown Sinnet",
         "program": "Expert",
         "difficulty": "Expert",
         "xp_value": 250,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Square",
+            "Lanyard"
         ],
-        "description": "The Lanyard Knot is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "A square, boxy lanyard made by tying a continuous series of Crown Knots. Often called a 'scoubidou'.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4390,39 +4318,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Lanyard Knot."
+                "instruction": "Start with two strands crossed at their centers (forming 4 working ends)."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Fold strand 1 over strand 2."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Lanyard Knot pattern."
+                "instruction": "Fold strand 2 over 1 and 3."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Fold strand 3 over 2 and 4. Pass strand 4 over 3 and through the loop of 1."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Lanyard Knot."
+                "instruction": "Pull all 4 strands tight to form a square layer. Repeat continuously."
             }
         ],
         "model_id": "lanyard_knot_v1"
     },
     "109": {
         "id": 109,
-        "name": "Diamond Knot",
+        "name": "Wall Sinnet",
         "program": "Expert",
         "difficulty": "Expert",
         "xp_value": 250,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Round",
+            "Lanyard"
         ],
-        "description": "The Diamond Knot is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "A round, cylindrical lanyard made by tying a continuous series of Wall Knots.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4431,39 +4359,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Diamond Knot."
+                "instruction": "Start with 4 working ends."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass strand 1 under strand 2."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Diamond Knot pattern."
+                "instruction": "Pass strand 2 under 1 and 3."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass strand 3 under 2 and 4. Pass strand 4 under 3 and up through the loop of 1."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Diamond Knot."
+                "instruction": "Pull all 4 tight. The resulting sinnet is round and slightly twisted."
             }
         ],
         "model_id": "diamond_knot_v1"
     },
     "110": {
         "id": 110,
-        "name": "Crown Sinnet",
+        "name": "French Whipping",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Hard",
+        "xp_value": 150,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Seizing",
+            "Decorative",
+            "Handle"
         ],
-        "description": "The Crown Sinnet is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "A decorative whipping created by tying a continuous series of half hitches. Forms a spiral ridge.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4472,39 +4400,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Crown Sinnet."
+                "instruction": "Attach the twine to the rope."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Tie a half hitch around the rope."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Crown Sinnet pattern."
+                "instruction": "Tie a second half hitch directly below the first."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Continue tying half hitches. A spiral ridge will naturally form along the rope."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Crown Sinnet."
+                "instruction": "Finish by tucking the end under the last few wraps."
             }
         ],
         "model_id": "crown_sinnet_v1"
     },
     "111": {
         "id": 111,
-        "name": "Wall Sinnet",
+        "name": "Snake Knot",
         "program": "Expert",
         "difficulty": "Expert",
-        "xp_value": 250,
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Lanyard",
+            "Paracord"
         ],
-        "description": "The Wall Sinnet is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "A popular paracord knot that creates a round, flexible lanyard resembling a snake's belly.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4513,39 +4441,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Wall Sinnet."
+                "instruction": "Take two strands. Pass the right strand behind the left."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Pass the right strand around the front to form a loop."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Wall Sinnet pattern."
+                "instruction": "Pass the left strand down through the loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pass the left strand behind the right standing part and up through the loop again."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Wall Sinnet."
+                "instruction": "Carefully tighten both strands to form the first segment. Repeat."
             }
         ],
         "model_id": "wall_sinnet_v1"
     },
     "112": {
         "id": 112,
-        "name": "Sheepshank",
+        "name": "Cobra Weave",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Medium",
+        "xp_value": 150,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Bracelet",
+            "Paracord"
         ],
-        "description": "The Sheepshank is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "The classic paracord survival bracelet weave. Technically a series of Solomon Bar knots.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4554,39 +4482,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Sheepshank."
+                "instruction": "Establish a core of two parallel strands."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Take the right working strand over the core."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Sheepshank pattern."
+                "instruction": "Take the left strand over the right tail, under the core, and up through the right loop."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Pull tight."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Sheepshank."
+                "instruction": "Repeat, alternating the starting side (left over core, right under core)."
             }
         ],
         "model_id": "sheepshank_v1"
     },
     "113": {
         "id": 113,
-        "name": "Cat's Paw",
+        "name": "King Cobra Weave",
         "program": "Expert",
-        "difficulty": "Expert",
-        "xp_value": 250,
+        "difficulty": "Hard",
+        "xp_value": 200,
         "tags": [
-            "Utility",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Bracelet",
+            "Paracord"
         ],
-        "description": "The Cat's Paw is an essential knot in the Utility category, commonly used in Expert level scouting activities.",
+        "description": "A double-thick Cobra Weave, created by weaving a second layer of Cobra knots directly over the first.",
         "scenarios": [
             "Used in camping scenarios requiring a Utility",
             "Standard requirement for the Expert rank",
@@ -4595,39 +4523,39 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Cat's Paw."
+                "instruction": "Complete a standard Cobra Weave bracelet."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Utility."
+                "instruction": "Do not cut the ends. Instead, turn the bracelet around."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Cat's Paw pattern."
+                "instruction": "Begin tying Cobra knots directly over the existing weave."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Ensure the new knots lock tightly into the grooves of the first layer."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Cat's Paw."
+                "instruction": "Finish at the end and melt the tips."
             }
         ],
         "model_id": "cat_s_paw_v1"
     },
     "114": {
         "id": 114,
-        "name": "Draw Hitch",
+        "name": "Globe Knot",
         "program": "Expert",
         "difficulty": "Expert",
-        "xp_value": 250,
+        "xp_value": 300,
         "tags": [
-            "Hitch",
-            "Expert",
-            "Scouting"
+            "Decorative",
+            "Sphere",
+            "Complex"
         ],
-        "description": "The Draw Hitch is an essential knot in the Hitch category, commonly used in Expert level scouting activities.",
+        "description": "A complex spherical knot that covers a round core, similar to a Turk's Head but mathematically designed to cover a sphere.",
         "scenarios": [
             "Used in camping scenarios requiring a Hitch",
             "Standard requirement for the Expert rank",
@@ -4636,23 +4564,23 @@ export const KNOT_REGISTRY = {
         "steps": [
             {
                 "step": 1,
-                "instruction": "Prepare the rope for the Draw Hitch."
+                "instruction": "Wrap the rope around a spherical core in a specific geometric pattern."
             },
             {
                 "step": 2,
-                "instruction": "Make the initial loop or wrap for the Hitch."
+                "instruction": "Establish the primary interlocking loops (often 30 or more facets)."
             },
             {
                 "step": 3,
-                "instruction": "Pass the working end through according to the Draw Hitch pattern."
+                "instruction": "Weave the working end over and under the established frame."
             },
             {
                 "step": 4,
-                "instruction": "Dress the knot by arranging the strands neatly."
+                "instruction": "Follow the entire path a second time to double the knot."
             },
             {
                 "step": 5,
-                "instruction": "Pull tight to secure the Draw Hitch."
+                "instruction": "Carefully tighten the knot evenly until the core is completely hidden."
             }
         ],
         "model_id": "draw_hitch_v1"
