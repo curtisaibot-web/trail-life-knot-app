@@ -58,3 +58,28 @@ WHERE name = 'Trucker''s Hitch';
 UPDATE knots SET story = 
 'High in the Alps, mountaineers face treacherous crevasses. If three climbers are tied together on a single rope and the middle climber falls, the knot attaching them must be able to take immense strain from both directions without distorting. The Alpine Butterfly was designed for exactly this. It creates a fixed, secure loop in the middle of a rope. It is beautiful to look at, incredibly strong, and unlike other mid-line loops, it remains easy to untie even after bearing the weight of a fallen climber.'
 WHERE name = 'Alpine Butterfly';
+
+-- 11. The Prusik Knot
+UPDATE knots SET story = 
+'Invented by Austrian mountaineer Karl Prusik in 1931, the Prusik Knot is a lifesaver in vertical environments. It is a friction hitch that slides freely when unloaded but grips the main rope like a vice the moment weight is applied. Climbers use it to ascend a rope (a technique called "Prusiking") or as a backup safety knot while rappelling. In a rescue scenario, if you fall into a crevasse and are dangling in space, two Prusik knots tied to your climbing rope are all you need to slowly inch your way back up to safety.'
+WHERE name = 'Prusik Knot';
+
+-- 12. Square Lashing
+UPDATE knots SET story = 
+'The Square Lashing is the foundation of pioneering. When scouts need to build a tower, a bridge, or a camp table, they rely on this lashing to bind two poles together at a 90-degree angle. It begins with a Clove Hitch and ends with a series of tight wraps and "frapping" turns that cinch the rope down with immense pressure. A properly tied Square Lashing is often stronger than nails or screws, as the rope flexes slightly under load rather than snapping.'
+WHERE name = 'Square Lashing';
+
+-- 13. Diagonal Lashing
+UPDATE knots SET story = 
+'While the Square Lashing is used when poles touch at a right angle, the Diagonal Lashing is designed for poles that cross at an odd angle or need to be pulled together to close a gap. It starts with a Timber Hitch around both poles, using the tension of the rope to force them tight. This lashing is critical for adding diagonal cross-braces to a pioneering tower, giving the structure the rigidity it needs to stand strong in high winds.'
+WHERE name = 'Diagonal Lashing';
+
+-- 14. Round Lashing
+UPDATE knots SET story = 
+'The Round Lashing is used to join two poles side-by-side, extending their overall length. Think of it as the "flagpole knot." If you have two 10-foot poles and need a 15-foot flagpole, you overlap them by 5 feet and secure them with two Round Lashings. It is simple but effective, relying on the friction between the two poles and the tight wraps of the rope to prevent them from sliding apart under the weight of the flag.'
+WHERE name = 'Round Lashing';
+
+-- 15. Tripod Lashing
+UPDATE knots SET story = 
+'The Tripod Lashing is the starting point for almost every free-standing structure in camp. Whether you are building a wash station, a cooking fire crane, or the base of a massive signal tower, you start by laying three poles side-by-side and binding them with a Tripod Lashing. When you stand the poles up and spread the legs apart, the lashing tightens automatically, creating an incredibly stable and self-supporting structure that can hold hundreds of pounds.'
+WHERE name = 'Tripod Lashing';
